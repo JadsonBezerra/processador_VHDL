@@ -158,7 +158,7 @@ entity dp is
          imm     : in std_logic_vector(3 downto 0);
 			opcode : in std_logic_vector(3 downto 0):="1111";
          output_4: out STD_LOGIC_VECTOR (3 downto 0);
-			out_opcode:out std_LOGIC_VECTOR(3 downto 0);
+			out_opcode:out std_LOGIC_VECTOR(3 downto 0)
          --add ports as required
        );
 end dp;

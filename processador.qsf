@@ -105,4 +105,4 @@ set_global_assignment -name CDF_FILE output_files/Chain2.cdf
 set_global_assignment -name CDF_FILE output_files/Chain3.cdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/jadson/work/20181/CD/CircuitosDigitais/Terceiro Projeto - Processador/Waveform.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /home/jadson/work/20181/CD/processador_VHDL/Waveform.vwf

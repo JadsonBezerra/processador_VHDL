@@ -8,7 +8,7 @@ entity ctrl is
          start : in STD_LOGIC;
          clk   : in STD_LOGIC; 
          imm   : out std_logic_vector(3 downto 0);
-			estado_atual : out std_logic_vector(3 downto 0);
+			estado_atual : out std_logic_vector(3 downto 0)
 			-- you will need to add more ports here as design grows
        );
 end ctrl;

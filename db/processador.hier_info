@@ -156,8 +156,8 @@ rst => PC[28].ACLR
 rst => PC[29].ACLR
 rst => PC[30].ACLR
 rst => PC[31].ACLR
-rst => state~10.DATAIN
-rst => operar~reg0.ENA
+rst => state~11.DATAIN
+rst => estado_atual[0]~reg0.ENA
 rst => OPCODE[3].ENA
 rst => OPCODE[2].ENA
 rst => OPCODE[1].ENA
@@ -173,10 +173,8 @@ rst => imm[0]~reg0.ENA
 rst => estado_atual[3]~reg0.ENA
 rst => estado_atual[2]~reg0.ENA
 rst => estado_atual[1]~reg0.ENA
-rst => estado_atual[0]~reg0.ENA
 start => Selector40.IN3
 start => state~0.DATAB
-clk => operar~reg0.CLK
 clk => estado_atual[0]~reg0.CLK
 clk => estado_atual[1]~reg0.CLK
 clk => estado_atual[2]~reg0.CLK
@@ -225,7 +223,7 @@ clk => PC[28].CLK
 clk => PC[29].CLK
 clk => PC[30].CLK
 clk => PC[31].CLK
-clk => state~6.DATAIN
+clk => state~7.DATAIN
 imm[0] <= imm[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 imm[1] <= imm[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 imm[2] <= imm[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -234,7 +232,6 @@ estado_atual[0] <= estado_atual[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estado_atual[1] <= estado_atual[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estado_atual[2] <= estado_atual[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estado_atual[3] <= estado_atual[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-operar <= operar~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |cpu|dp:datapath
@@ -434,7 +431,6 @@ out_opcode[0] <= opcode_sig[0].DB_MAX_OUTPUT_PORT_TYPE
 out_opcode[1] <= opcode_sig[1].DB_MAX_OUTPUT_PORT_TYPE
 out_opcode[2] <= opcode_sig[2].DB_MAX_OUTPUT_PORT_TYPE
 out_opcode[3] <= opcode_sig[3].DB_MAX_OUTPUT_PORT_TYPE
-operar => ~NO_FANOUT~
 
 
 |cpu|dp:datapath|alu:alu1

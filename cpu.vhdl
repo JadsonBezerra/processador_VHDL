@@ -26,7 +26,7 @@ component ctrl
     	   start : in STD_LOGIC;
          clk   : in STD_LOGIC;
          imm   : out std_logic_vector(3 downto 0);
-			estado_atual : out std_logic_vector(3 downto 0)	;
+			estado_atual : out std_logic_vector(3 downto 0)	
 			-- add ports as required
         );
 end component;
@@ -37,13 +37,13 @@ component dp
 				imm     : in std_logic_vector(3 downto 0);
 	  			opcode : in std_logic_vector(3 downto 0);
 				output_4: out STD_LOGIC_VECTOR (3 downto 0);
-				out_opcode:out std_LOGIC_VECTOR(3 downto 0);
+				out_opcode:out std_LOGIC_VECTOR(3 downto 0)
           -- add ports as required
         );
 end component;
 
 
-signal immediate : std_logic_vector(3 downto 0)
+signal immediate : std_logic_vector(3 downto 0);
 signal estado : std_logic_vector(3 downto 0);
 signal estado_dp : std_logic_vector(3 downto 0);
 signal enable : std_logic;
