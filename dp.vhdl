@@ -217,6 +217,7 @@ begin
 	-- maybe this is were we add the port maps for the other components.....
 			
 	      out_opcode<=opcode_sig;
+								output_4<=acu_out;
 	process (rst, clk,opcode)
 		begin
 				if(rst='1') then
@@ -238,7 +239,6 @@ begin
 				teste<=0;
 					enable_alu<='1';
 				end if;
-					output_4<=acu_out;
 					opcode_sig<=opcode;
 					imm_sig<=imm;
 					case OPCode is

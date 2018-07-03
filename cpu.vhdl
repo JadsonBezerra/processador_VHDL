@@ -67,7 +67,7 @@ begin
   begin
 		if (rst='1') then
 			hex4 <= "1000000";
-		
+			output<="0000";
 		elsif(clk'event and clk='0') then
 			--output <= cpu_out;
 	 		output<=cpu_out;

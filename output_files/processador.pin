@@ -400,7 +400,7 @@ RESERVED_INPUT               : G21       :        :                   :         
 RESERVED_INPUT               : G22       :        :                   :         : 5         :                
 RESERVED_INPUT               : G23       :        :                   :         : 5         :                
 RESERVED_INPUT               : G24       :        :                   :         : 5         :                
-output[1]                    : G25       : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT               : G25       :        :                   :         : 5         :                
 clk                          : G26       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT               : H1        :        :                   :         : 2         :                
 RESERVED_INPUT               : H2        :        :                   :         : 2         :                
@@ -420,14 +420,14 @@ RESERVED_INPUT               : H15       :        :                   :         
 RESERVED_INPUT               : H16       :        :                   :         : 4         :                
 RESERVED_INPUT               : H17       :        :                   :         : 4         :                
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
-RESERVED_INPUT               : H19       :        :                   :         : 5         :                
+output[2]                    : H19       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : H21       :        :                   :         : 5         :                
 GND                          : H22       : gnd    :                   :         :           :                
-output[0]                    : H23       : output : 3.3-V LVTTL       :         : 5         : N              
-output[3]                    : H24       : output : 3.3-V LVTTL       :         : 5         : N              
-RESERVED_INPUT               : H25       :        :                   :         : 5         :                
-RESERVED_INPUT               : H26       :        :                   :         : 5         :                
+RESERVED_INPUT               : H23       :        :                   :         : 5         :                
+RESERVED_INPUT               : H24       :        :                   :         : 5         :                
+output[0]                    : H25       : output : 3.3-V LVTTL       :         : 5         : N              
+output[3]                    : H26       : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT               : J1        :        :                   :         : 2         :                
 RESERVED_INPUT               : J2        :        :                   :         : 2         :                
 RESERVED_INPUT               : J3        :        :                   :         : 2         :                
@@ -450,8 +450,8 @@ VCCIO5                       : J19       : power  :                   : 3.3V    
 RESERVED_INPUT               : J20       :        :                   :         : 5         :                
 RESERVED_INPUT               : J21       :        :                   :         : 5         :                
 RESERVED_INPUT               : J22       :        :                   :         : 5         :                
-RESERVED_INPUT               : J23       :        :                   :         : 5         :                
-output[2]                    : J24       : output : 3.3-V LVTTL       :         : 5         : N              
+output[1]                    : J23       : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT               : J24       :        :                   :         : 5         :                
 RESERVED_INPUT               : J25       :        :                   :         : 5         :                
 RESERVED_INPUT               : J26       :        :                   :         : 5         :                
 RESERVED_INPUT               : K1        :        :                   :         : 2         :                
