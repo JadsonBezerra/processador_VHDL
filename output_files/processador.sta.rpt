@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for processador
-Mon Jul  2 23:00:53 2018
+Tue Jul  3 22:38:23 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -106,7 +106,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 219.68 MHz ; 219.68 MHz      ; clk        ;      ;
+; 222.12 MHz ; 222.12 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -116,7 +116,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -3.552 ; -207.668      ;
+; clk   ; -3.502 ; -222.109      ;
 +-------+--------+---------------+
 
 
@@ -125,7 +125,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 0.381 ; 0.000         ;
+; clk   ; 0.272 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -146,7 +146,7 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -1.222 ; -131.222              ;
+; clk   ; -1.222 ; -154.222              ;
 +-------+--------+-----------------------+
 
 
@@ -155,106 +155,106 @@ No paths to report.
 +--------+------------------------+------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node              ; To Node                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------+------------------------+--------------+-------------+--------------+------------+------------+
-; -3.552 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.584      ;
-; -3.529 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.561      ;
-; -3.515 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.547      ;
-; -3.485 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.516      ;
-; -3.462 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.493      ;
-; -3.448 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.479      ;
-; -3.401 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.432      ;
-; -3.399 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.035      ; 4.470      ;
-; -3.378 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.409      ;
-; -3.375 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.407      ;
-; -3.364 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.395      ;
-; -3.340 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.371      ;
-; -3.332 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 4.402      ;
-; -3.317 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.348      ;
-; -3.308 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.339      ;
-; -3.303 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.334      ;
-; -3.248 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 4.318      ;
-; -3.247 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.278      ;
-; -3.231 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.263      ;
-; -3.224 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.255      ;
-; -3.224 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.255      ;
-; -3.218 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.250      ;
-; -3.210 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.241      ;
-; -3.187 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 4.257      ;
-; -3.180 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.211      ;
-; -3.164 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.195      ;
-; -3.163 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.194      ;
-; -3.161 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.004     ; 4.193      ;
-; -3.157 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.188      ;
-; -3.156 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.192      ;
-; -3.151 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.182      ;
-; -3.143 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.174      ;
-; -3.133 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.169      ;
-; -3.119 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.155      ;
-; -3.097 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.128      ;
-; -3.094 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 4.164      ;
-; -3.094 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.125      ;
-; -3.088 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.124      ;
-; -3.080 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.111      ;
-; -3.074 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.105      ;
-; -3.070 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.101      ;
-; -3.070 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.101      ;
-; -3.067 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.098      ;
-; -3.065 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.101      ;
-; -3.063 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.099      ;
-; -3.062 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.001     ; 4.097      ;
-; -3.062 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.098      ;
-; -3.061 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.097      ;
-; -3.060 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.091      ;
-; -3.051 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.087      ;
-; -3.047 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.078      ;
-; -3.046 ; ctrl:controller|PC[21] ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; -0.034     ; 4.048      ;
-; -3.045 ; ctrl:controller|PC[21] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.035     ; 4.046      ;
-; -3.045 ; ctrl:controller|PC[21] ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; -0.034     ; 4.047      ;
-; -3.044 ; ctrl:controller|PC[21] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.034     ; 4.046      ;
-; -3.033 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.064      ;
-; -3.027 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 4.097      ;
-; -3.019 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.050      ;
-; -3.011 ; ctrl:controller|PC[10] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.047      ;
-; -3.010 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.041      ;
-; -3.010 ; ctrl:controller|PC[23] ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; -0.034     ; 4.012      ;
-; -3.009 ; ctrl:controller|PC[23] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.035     ; 4.010      ;
-; -3.009 ; ctrl:controller|PC[23] ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; -0.034     ; 4.011      ;
-; -3.008 ; ctrl:controller|PC[23] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.034     ; 4.010      ;
-; -3.006 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.037      ;
-; -3.003 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.039      ; 4.078      ;
-; -3.003 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 4.034      ;
-; -2.988 ; ctrl:controller|PC[10] ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.024      ;
-; -2.979 ; ctrl:controller|PC[11] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.015      ;
-; -2.979 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.015      ;
-; -2.974 ; ctrl:controller|PC[10] ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.010      ;
-; -2.956 ; ctrl:controller|PC[11] ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.992      ;
-; -2.949 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.980      ;
-; -2.944 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 4.014      ;
-; -2.942 ; ctrl:controller|PC[11] ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.978      ;
-; -2.935 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.039      ; 4.010      ;
-; -2.926 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.957      ;
-; -2.920 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.951      ;
-; -2.917 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.034      ; 3.987      ;
-; -2.913 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.944      ;
-; -2.912 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; -0.010     ; 3.938      ;
-; -2.911 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[14] ; clk          ; clk         ; 1.000        ; -0.010     ; 3.937      ;
-; -2.911 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.947      ;
-; -2.910 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[13] ; clk          ; clk         ; 1.000        ; -0.010     ; 3.936      ;
-; -2.895 ; ctrl:controller|PC[21] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; -0.044     ; 3.887      ;
-; -2.894 ; ctrl:controller|PC[21] ; ctrl:controller|PC[14] ; clk          ; clk         ; 1.000        ; -0.044     ; 3.886      ;
-; -2.893 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.924      ;
-; -2.893 ; ctrl:controller|PC[21] ; ctrl:controller|PC[13] ; clk          ; clk         ; 1.000        ; -0.044     ; 3.885      ;
-; -2.862 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[15] ; clk          ; clk         ; 1.000        ; 0.035      ; 3.933      ;
-; -2.859 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.890      ;
-; -2.859 ; ctrl:controller|PC[23] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; -0.044     ; 3.851      ;
-; -2.858 ; ctrl:controller|PC[10] ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.039      ; 3.933      ;
-; -2.858 ; ctrl:controller|PC[23] ; ctrl:controller|PC[14] ; clk          ; clk         ; 1.000        ; -0.044     ; 3.850      ;
-; -2.857 ; ctrl:controller|PC[23] ; ctrl:controller|PC[13] ; clk          ; clk         ; 1.000        ; -0.044     ; 3.849      ;
-; -2.856 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 3.887      ;
-; -2.855 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.891      ;
-; -2.854 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.001     ; 3.889      ;
-; -2.854 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.890      ;
-; -2.853 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.889      ;
-; -2.847 ; ctrl:controller|PC[18] ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; -0.034     ; 3.849      ;
+; -3.502 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.538      ;
+; -3.483 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.043     ; 4.476      ;
+; -3.400 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.684      ;
+; -3.381 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.622      ;
+; -3.353 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.389      ;
+; -3.335 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.043     ; 4.328      ;
+; -3.302 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.043      ; 4.381      ;
+; -3.283 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.319      ;
+; -3.256 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.043     ; 4.249      ;
+; -3.251 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.535      ;
+; -3.247 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.531      ;
+; -3.244 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.528      ;
+; -3.233 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.474      ;
+; -3.228 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.469      ;
+; -3.225 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.466      ;
+; -3.175 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.459      ;
+; -3.156 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.397      ;
+; -3.154 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.395      ;
+; -3.153 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.043     ; 4.146      ;
+; -3.153 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.043      ; 4.232      ;
+; -3.135 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.171      ;
+; -3.127 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.043     ; 4.120      ;
+; -3.110 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.261      ; 4.407      ;
+; -3.098 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.382      ;
+; -3.095 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.379      ;
+; -3.091 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.218      ; 4.345      ;
+; -3.089 ; ctrl:controller|PC[12] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.248     ; 3.877      ;
+; -3.080 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.321      ;
+; -3.077 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.318      ;
+; -3.061 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.043     ; 4.054      ;
+; -3.056 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.092      ;
+; -3.051 ; ctrl:controller|PC[13] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.248     ; 3.839      ;
+; -3.051 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.292      ;
+; -3.050 ; ctrl:controller|PC[13] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.248     ; 3.838      ;
+; -3.049 ; ctrl:controller|PC[13] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.248     ; 3.837      ;
+; -3.029 ; ctrl:controller|PC[13] ; ctrl:controller|PC[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.065      ;
+; -3.026 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.310      ;
+; -3.025 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.266      ;
+; -3.023 ; ctrl:controller|PC[13] ; ctrl:controller|PC[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.059      ;
+; -3.020 ; ctrl:controller|PC[13] ; ctrl:controller|PC[9]  ; clk          ; clk         ; 1.000        ; -0.205     ; 3.851      ;
+; -3.019 ; ctrl:controller|PC[13] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.055      ;
+; -3.018 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.261      ; 4.315      ;
+; -3.014 ; ctrl:controller|PC[13] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.050      ;
+; -3.014 ; ctrl:controller|PC[12] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.248     ; 3.802      ;
+; -3.012 ; ctrl:controller|PC[12] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.248     ; 3.800      ;
+; -3.008 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.249      ;
+; -3.001 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.242      ;
+; -2.999 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.218      ; 4.253      ;
+; -2.998 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.239      ;
+; -2.994 ; ctrl:controller|PC[24] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.261     ; 3.769      ;
+; -2.993 ; ctrl:controller|PC[24] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.261     ; 3.768      ;
+; -2.992 ; ctrl:controller|PC[24] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.261     ; 3.767      ;
+; -2.992 ; ctrl:controller|PC[12] ; ctrl:controller|PC[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.028      ;
+; -2.987 ; ctrl:controller|PC[12] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.023      ;
+; -2.986 ; ctrl:controller|PC[12] ; ctrl:controller|PC[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.022      ;
+; -2.983 ; ctrl:controller|PC[12] ; ctrl:controller|PC[9]  ; clk          ; clk         ; 1.000        ; -0.205     ; 3.814      ;
+; -2.980 ; ctrl:controller|PC[14] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.248     ; 3.768      ;
+; -2.977 ; ctrl:controller|PC[12] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.013      ;
+; -2.972 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[21] ; clk          ; clk         ; 1.000        ; 0.043      ; 4.051      ;
+; -2.972 ; ctrl:controller|PC[24] ; ctrl:controller|PC[16] ; clk          ; clk         ; 1.000        ; -0.013     ; 3.995      ;
+; -2.966 ; ctrl:controller|PC[24] ; ctrl:controller|PC[18] ; clk          ; clk         ; 1.000        ; -0.013     ; 3.989      ;
+; -2.963 ; ctrl:controller|PC[24] ; ctrl:controller|PC[9]  ; clk          ; clk         ; 1.000        ; -0.218     ; 3.781      ;
+; -2.962 ; ctrl:controller|PC[24] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.013     ; 3.985      ;
+; -2.961 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.261      ; 4.258      ;
+; -2.959 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.200      ;
+; -2.957 ; ctrl:controller|PC[24] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; -0.013     ; 3.980      ;
+; -2.953 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.989      ;
+; -2.953 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.989      ;
+; -2.943 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.218      ; 4.197      ;
+; -2.929 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.170      ;
+; -2.927 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.963      ;
+; -2.919 ; ctrl:controller|PC[15] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.248     ; 3.707      ;
+; -2.917 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[19] ; clk          ; clk         ; 1.000        ; 0.248      ; 4.201      ;
+; -2.898 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.139      ;
+; -2.898 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[19] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.139      ;
+; -2.896 ; ctrl:controller|PC[13] ; ctrl:controller|PC[4]  ; clk          ; clk         ; 1.000        ; -0.205     ; 3.727      ;
+; -2.895 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.136      ;
+; -2.894 ; ctrl:controller|PC[13] ; ctrl:controller|PC[5]  ; clk          ; clk         ; 1.000        ; -0.205     ; 3.725      ;
+; -2.894 ; ctrl:controller|PC[13] ; ctrl:controller|PC[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.930      ;
+; -2.893 ; ctrl:controller|PC[13] ; ctrl:controller|PC[10] ; clk          ; clk         ; 1.000        ; -0.205     ; 3.724      ;
+; -2.891 ; ctrl:controller|PC[13] ; ctrl:controller|PC[6]  ; clk          ; clk         ; 1.000        ; -0.205     ; 3.722      ;
+; -2.890 ; ctrl:controller|PC[13] ; ctrl:controller|PC[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.926      ;
+; -2.890 ; ctrl:controller|PC[13] ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.926      ;
+; -2.889 ; ctrl:controller|PC[12] ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; -0.205     ; 3.720      ;
+; -2.888 ; ctrl:controller|PC[13] ; ctrl:controller|PC[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.924      ;
+; -2.888 ; ctrl:controller|PC[13] ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.924      ;
+; -2.883 ; ctrl:controller|PC[13] ; ctrl:controller|PC[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.919      ;
+; -2.883 ; ctrl:controller|PC[13] ; ctrl:controller|PC[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.919      ;
+; -2.880 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; 0.261      ; 4.177      ;
+; -2.880 ; ctrl:controller|PC[13] ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.916      ;
+; -2.878 ; ctrl:controller|PC[14] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.914      ;
+; -2.876 ; ctrl:controller|PC[13] ; ctrl:controller|PC[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.912      ;
+; -2.872 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.113      ;
+; -2.869 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.205      ; 4.110      ;
+; -2.869 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.261      ; 4.166      ;
+; -2.864 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.218      ; 4.118      ;
+; -2.862 ; ctrl:controller|PC[13] ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; -0.205     ; 3.693      ;
+; -2.861 ; ctrl:controller|PC[13] ; ctrl:controller|PC[11] ; clk          ; clk         ; 1.000        ; -0.205     ; 3.692      ;
+; -2.861 ; ctrl:controller|PC[13] ; ctrl:controller|PC[17] ; clk          ; clk         ; 1.000        ; -0.205     ; 3.692      ;
+; -2.861 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.897      ;
 +--------+------------------------+------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -263,106 +263,106 @@ No paths to report.
 +-------+--------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                  ; To Node                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.381 ; ctrl:controller|imm[1]                     ; dp:datapath|imm_sig[1]                     ; clk          ; clk         ; 0.000        ; 0.156      ; 0.803      ;
-; 0.382 ; ctrl:controller|imm[2]                     ; dp:datapath|imm_sig[2]                     ; clk          ; clk         ; 0.000        ; 0.156      ; 0.804      ;
+; 0.272 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[1]             ; clk          ; clk         ; 0.000        ; 0.431      ; 0.969      ;
+; 0.284 ; dp:datapath|output_4[0]                    ; hex4[3]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.340      ;
+; 0.285 ; dp:datapath|output_4[0]                    ; hex4[6]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.341      ;
+; 0.287 ; dp:datapath|output_4[0]                    ; output[0]~reg0                             ; clk          ; clk         ; 0.000        ; 0.790      ; 1.343      ;
+; 0.289 ; dp:datapath|output_4[0]                    ; hex4[5]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.345      ;
+; 0.290 ; dp:datapath|output_4[0]                    ; hex4[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.346      ;
+; 0.291 ; dp:datapath|output_4[0]                    ; hex4[1]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.347      ;
+; 0.294 ; dp:datapath|output_4[0]                    ; hex4[2]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.350      ;
+; 0.294 ; dp:datapath|output_4[0]                    ; hex4[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.350      ;
+; 0.298 ; dp:datapath|output_4[1]                    ; output[1]~reg0                             ; clk          ; clk         ; 0.000        ; 0.790      ; 1.354      ;
+; 0.342 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[0]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.039      ;
+; 0.382 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[3]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.079      ;
+; 0.390 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[2]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.087      ;
 ; 0.391 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s0                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ctrl:controller|PC[0]                      ; ctrl:controller|PC[0]                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ctrl:controller|PC[31]                     ; ctrl:controller|PC[31]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ctrl:controller|state.done                 ; ctrl:controller|state.done                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; dp:datapath|enable_reg                     ; dp:datapath|enable_reg                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ctrl:controller|estado_atual[1]            ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ctrl:controller|estado_atual[2]            ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; dp:datapath|enable_acu                     ; dp:datapath|enable_acu                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ctrl:controller|imm[0]                     ; ctrl:controller|imm[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; dp:datapath|teste[0]                       ; dp:datapath|teste[0]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; dp:datapath|enable_reg                     ; dp:datapath|enable_reg                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; dp:datapath|teste[1]                       ; dp:datapath|teste[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; dp:datapath|teste[0]                       ; dp:datapath|teste[0]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; hex0[0]~reg0                               ; hex0[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; hex4[6]~reg0                               ; hex4[6]~reg0                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.518 ; ctrl:controller|state.s5                   ; ctrl:controller|state.s6                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.784      ;
-; 0.518 ; ctrl:controller|imm[3]                     ; dp:datapath|imm_sig[3]                     ; clk          ; clk         ; 0.000        ; 0.156      ; 0.940      ;
-; 0.521 ; ctrl:controller|state.s4                   ; ctrl:controller|state.s5                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.787      ;
-; 0.530 ; ctrl:controller|state.s1                   ; ctrl:controller|state.s2                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.796      ;
-; 0.530 ; dp:datapath|rf:registrador|out2[2]         ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.312      ; 1.108      ;
-; 0.535 ; ctrl:controller|OPCODE[3]                  ; ctrl:controller|estado_atual[3]            ; clk          ; clk         ; 0.000        ; -0.001     ; 0.800      ;
-; 0.536 ; ctrl:controller|state.s2                   ; ctrl:controller|state.s3                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.802      ;
-; 0.541 ; ctrl:controller|imm[0]                     ; dp:datapath|imm_sig[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.807      ;
-; 0.546 ; ctrl:controller|estado_atual[3]            ; dp:datapath|opcode_sig[3]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.812      ;
-; 0.566 ; ctrl:controller|state.done                 ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.832      ;
-; 0.567 ; ctrl:controller|state.done                 ; ctrl:controller|estado_atual[0]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.833      ;
-; 0.567 ; ctrl:controller|state.done                 ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.833      ;
-; 0.571 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s1                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.837      ;
-; 0.674 ; dp:datapath|rf:registrador|out3[0]         ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.033      ; 0.973      ;
-; 0.676 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; -0.001     ; 0.941      ;
-; 0.685 ; dp:datapath|acu_in[0]                      ; dp:datapath|acc:acumulador_atual|output[0] ; clk          ; clk         ; 0.000        ; -0.017     ; 0.934      ;
-; 0.699 ; dp:datapath|rf:registrador|out2[0]         ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.312      ; 1.277      ;
-; 0.700 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.966      ;
-; 0.706 ; ctrl:controller|state.s3                   ; ctrl:controller|state.s4                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.972      ;
-; 0.724 ; ctrl:controller|imm[3]                     ; dp:datapath|dd[1]                          ; clk          ; clk         ; 0.000        ; 0.282      ; 1.272      ;
-; 0.727 ; dp:datapath|acu_in[1]                      ; dp:datapath|acc:acumulador_atual|output[1] ; clk          ; clk         ; 0.000        ; -0.017     ; 0.976      ;
-; 0.727 ; dp:datapath|acu_in[2]                      ; dp:datapath|acc:acumulador_atual|output[2] ; clk          ; clk         ; 0.000        ; -0.017     ; 0.976      ;
-; 0.727 ; dp:datapath|acu_in[3]                      ; dp:datapath|acc:acumulador_atual|output[3] ; clk          ; clk         ; 0.000        ; -0.017     ; 0.976      ;
-; 0.802 ; dp:datapath|teste[0]                       ; dp:datapath|teste[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
-; 0.813 ; dp:datapath|rf:registrador|out3[3]         ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; 0.033      ; 1.112      ;
-; 0.814 ; ctrl:controller|state.s6                   ; ctrl:controller|state.s1                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.080      ;
-; 0.815 ; ctrl:controller|state.s6                   ; ctrl:controller|state.done                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.081      ;
-; 0.832 ; dp:datapath|alu_in1[0]                     ; dp:datapath|alu:alu1|output[0]             ; clk          ; clk         ; 0.000        ; 0.039      ; 1.137      ;
-; 0.846 ; dp:datapath|dd[0]                          ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; -0.001     ; 1.111      ;
-; 0.849 ; ctrl:controller|imm[1]                     ; dp:datapath|alu_in1[1]                     ; clk          ; clk         ; 0.000        ; 0.170      ; 1.285      ;
-; 0.855 ; ctrl:controller|estado_atual[1]            ; dp:datapath|alu_in2[3]                     ; clk          ; clk         ; 0.000        ; 0.306      ; 1.427      ;
-; 0.856 ; ctrl:controller|ADDRESS[3]                 ; ctrl:controller|PC[3]                      ; clk          ; clk         ; 0.000        ; 0.288      ; 1.410      ;
-; 0.857 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; -0.001     ; 1.122      ;
-; 0.876 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[0]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.142      ;
-; 0.880 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.146      ;
-; 0.928 ; dp:datapath|rf:registrador|out3[2]         ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.033      ; 1.227      ;
-; 0.936 ; dp:datapath|rf:registrador|out1[3]         ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; 0.060      ; 1.262      ;
-; 0.946 ; ctrl:controller|imm[2]                     ; dp:datapath|dd[0]                          ; clk          ; clk         ; 0.000        ; 0.282      ; 1.494      ;
-; 0.951 ; ctrl:controller|OPCODE[0]                  ; ctrl:controller|estado_atual[0]            ; clk          ; clk         ; 0.000        ; -0.001     ; 1.216      ;
-; 0.966 ; ctrl:controller|state.s0                   ; ctrl:controller|imm[0]                     ; clk          ; clk         ; 0.000        ; 0.215      ; 1.447      ;
-; 0.969 ; ctrl:controller|imm[3]                     ; dp:datapath|alu_in1[3]                     ; clk          ; clk         ; 0.000        ; 0.170      ; 1.405      ;
-; 0.976 ; ctrl:controller|OPCODE[2]                  ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; -0.001     ; 1.241      ;
-; 0.981 ; ctrl:controller|estado_atual[2]            ; dp:datapath|alu_in2[3]                     ; clk          ; clk         ; 0.000        ; 0.306      ; 1.553      ;
-; 0.982 ; ctrl:controller|estado_atual[2]            ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; 0.306      ; 1.554      ;
-; 0.984 ; dp:datapath|alu:alu1|output[1]             ; dp:datapath|acu_in[1]                      ; clk          ; clk         ; 0.000        ; 0.049      ; 1.299      ;
-; 0.986 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[3]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.252      ;
-; 0.999 ; ctrl:controller|imm[0]                     ; dp:datapath|alu_in1[0]                     ; clk          ; clk         ; 0.000        ; 0.014      ; 1.279      ;
-; 1.001 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[4]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.556      ;
-; 1.001 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[5]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.556      ;
-; 1.001 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[6]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.556      ;
-; 1.001 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[7]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.556      ;
-; 1.016 ; ctrl:controller|state.s6                   ; ctrl:controller|PC[1]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.571      ;
-; 1.017 ; ctrl:controller|state.s6                   ; ctrl:controller|PC[3]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.572      ;
-; 1.019 ; ctrl:controller|state.s6                   ; ctrl:controller|PC[2]                      ; clk          ; clk         ; 0.000        ; 0.289      ; 1.574      ;
-; 1.020 ; ctrl:controller|estado_atual[1]            ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; 0.306      ; 1.592      ;
-; 1.028 ; ctrl:controller|OPCODE[1]                  ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; -0.001     ; 1.293      ;
-; 1.032 ; dp:datapath|rf:registrador|output[2]       ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; -0.034     ; 1.264      ;
-; 1.035 ; dp:datapath|dado[2]                        ; dp:datapath|rf:registrador|out3[2]         ; clk          ; clk         ; 0.000        ; -0.009     ; 1.292      ;
-; 1.035 ; dp:datapath|dado[3]                        ; dp:datapath|rf:registrador|out3[3]         ; clk          ; clk         ; 0.000        ; -0.009     ; 1.292      ;
-; 1.038 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[2]~reg0                               ; clk          ; clk         ; 0.000        ; 0.015      ; 1.319      ;
-; 1.038 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[3]~reg0                               ; clk          ; clk         ; 0.000        ; 0.015      ; 1.319      ;
-; 1.038 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.015      ; 1.319      ;
-; 1.040 ; dp:datapath|rf:registrador|output[3]       ; dp:datapath|alu_in2[3]                     ; clk          ; clk         ; 0.000        ; -0.034     ; 1.272      ;
-; 1.041 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[1]~reg0                               ; clk          ; clk         ; 0.000        ; 0.015      ; 1.322      ;
-; 1.042 ; dp:datapath|acc:acumulador_atual|output[0] ; dp:datapath|dado[0]                        ; clk          ; clk         ; 0.000        ; 0.016      ; 1.324      ;
-; 1.042 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.015      ; 1.323      ;
-; 1.042 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[5]~reg0                               ; clk          ; clk         ; 0.000        ; 0.015      ; 1.323      ;
-; 1.061 ; dp:datapath|rf:registrador|output[3]       ; dp:datapath|acu_in[3]                      ; clk          ; clk         ; 0.000        ; -0.023     ; 1.304      ;
-; 1.099 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[10]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.649      ;
-; 1.099 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[27]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.649      ;
-; 1.106 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[30]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.656      ;
-; 1.107 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[11]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.657      ;
-; 1.109 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[24]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.659      ;
-; 1.110 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[26]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.660      ;
-; 1.112 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[0]                      ; clk          ; clk         ; 0.000        ; 0.317      ; 1.695      ;
-; 1.112 ; dp:datapath|acc:acumulador_atual|output[0] ; output[0]~reg0                             ; clk          ; clk         ; 0.000        ; -0.073     ; 1.305      ;
-; 1.113 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[25]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.663      ;
-; 1.114 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[8]                      ; clk          ; clk         ; 0.000        ; 0.284      ; 1.664      ;
-; 1.114 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[9]                      ; clk          ; clk         ; 0.000        ; 0.284      ; 1.664      ;
-; 1.116 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[28]                     ; clk          ; clk         ; 0.000        ; 0.284      ; 1.666      ;
-; 1.116 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[3]                      ; clk          ; clk         ; 0.000        ; 0.317      ; 1.699      ;
-; 1.117 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[1]                      ; clk          ; clk         ; 0.000        ; 0.317      ; 1.700      ;
-; 1.118 ; dp:datapath|alu_in1[1]                     ; dp:datapath|alu:alu1|output[1]             ; clk          ; clk         ; 0.000        ; 0.039      ; 1.423      ;
-; 1.119 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[0] ; clk          ; clk         ; 0.000        ; -0.013     ; 1.372      ;
-; 1.119 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[1] ; clk          ; clk         ; 0.000        ; -0.013     ; 1.372      ;
-; 1.119 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[2] ; clk          ; clk         ; 0.000        ; -0.013     ; 1.372      ;
-; 1.119 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[3] ; clk          ; clk         ; 0.000        ; -0.013     ; 1.372      ;
+; 0.409 ; dp:datapath|output_4[3]                    ; output[3]~reg0                             ; clk          ; clk         ; 0.000        ; 0.790      ; 1.465      ;
+; 0.411 ; dp:datapath|output_4[2]                    ; hex4[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.467      ;
+; 0.414 ; dp:datapath|output_4[2]                    ; hex4[2]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.470      ;
+; 0.414 ; dp:datapath|alu_in1[0]                     ; dp:datapath|alu:alu1|output[0]             ; clk          ; clk         ; 0.000        ; 0.445      ; 1.125      ;
+; 0.421 ; dp:datapath|output_4[2]                    ; hex4[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.477      ;
+; 0.421 ; dp:datapath|output_4[2]                    ; hex4[1]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.477      ;
+; 0.422 ; dp:datapath|output_4[2]                    ; hex4[6]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.478      ;
+; 0.422 ; dp:datapath|output_4[2]                    ; hex4[5]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.478      ;
+; 0.423 ; dp:datapath|output_4[2]                    ; hex4[3]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.479      ;
+; 0.424 ; dp:datapath|output_4[2]                    ; output[2]~reg0                             ; clk          ; clk         ; 0.000        ; 0.790      ; 1.480      ;
+; 0.441 ; dp:datapath|acc:acumulador_atual|output[3] ; dp:datapath|dado[3]                        ; clk          ; clk         ; 0.000        ; 0.565      ; 1.272      ;
+; 0.501 ; dp:datapath|teste[1]                       ; dp:datapath|enable_alu                     ; clk          ; clk         ; 0.000        ; 0.356      ; 1.123      ;
+; 0.515 ; ctrl:controller|state.s4                   ; ctrl:controller|state.s5                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.781      ;
+; 0.525 ; ctrl:controller|state.s1                   ; ctrl:controller|state.s2                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.791      ;
+; 0.526 ; dp:datapath|acc:acumulador_atual|output[3] ; dp:datapath|output_4[3]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 0.791      ;
+; 0.528 ; dp:datapath|acc:acumulador_atual|output[1] ; dp:datapath|output_4[1]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 0.793      ;
+; 0.532 ; dp:datapath|acc:acumulador_atual|output[2] ; dp:datapath|output_4[2]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 0.797      ;
+; 0.539 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s1                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.540 ; ctrl:controller|state.s6                   ; ctrl:controller|state.done                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.806      ;
+; 0.543 ; dp:datapath|alu_in1[1]                     ; dp:datapath|alu:alu1|output[1]             ; clk          ; clk         ; 0.000        ; 0.445      ; 1.254      ;
+; 0.563 ; dp:datapath|output_4[1]                    ; hex4[1]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.619      ;
+; 0.567 ; dp:datapath|output_4[1]                    ; hex4[5]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.623      ;
+; 0.567 ; dp:datapath|output_4[1]                    ; hex4[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.623      ;
+; 0.568 ; dp:datapath|output_4[1]                    ; hex4[2]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.624      ;
+; 0.569 ; dp:datapath|output_4[1]                    ; hex4[6]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.625      ;
+; 0.571 ; dp:datapath|output_4[1]                    ; hex4[3]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.627      ;
+; 0.572 ; dp:datapath|output_4[1]                    ; hex4[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.628      ;
+; 0.575 ; dp:datapath|acc:acumulador_atual|output[0] ; dp:datapath|dado[0]                        ; clk          ; clk         ; 0.000        ; 0.565      ; 1.406      ;
+; 0.576 ; dp:datapath|teste[0]                       ; dp:datapath|enable_alu                     ; clk          ; clk         ; 0.000        ; 0.356      ; 1.198      ;
+; 0.583 ; dp:datapath|acc:acumulador_atual|output[2] ; dp:datapath|dado[2]                        ; clk          ; clk         ; 0.000        ; 0.565      ; 1.414      ;
+; 0.588 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.084      ; 0.938      ;
+; 0.606 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[0]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.303      ;
+; 0.637 ; dp:datapath|alu_in1[3]                     ; dp:datapath|alu:alu1|output[3]             ; clk          ; clk         ; 0.000        ; 0.445      ; 1.348      ;
+; 0.660 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[2]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.357      ;
+; 0.666 ; ctrl:controller|state.s2                   ; ctrl:controller|state.s3                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.932      ;
+; 0.667 ; dp:datapath|acc:acumulador_atual|output[0] ; dp:datapath|output_4[0]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 0.932      ;
+; 0.701 ; dp:datapath|alu_in2[0]                     ; dp:datapath|alu:alu1|output[0]             ; clk          ; clk         ; 0.000        ; 0.686      ; 1.653      ;
+; 0.720 ; dp:datapath|dd[0]                          ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; 0.084      ; 1.070      ;
+; 0.727 ; ctrl:controller|state.s3                   ; ctrl:controller|state.s4                   ; clk          ; clk         ; 0.000        ; -0.008     ; 0.985      ;
+; 0.743 ; dp:datapath|opcode_sig[3]                  ; hex2[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.357      ; 1.366      ;
+; 0.760 ; ctrl:controller|PC[1]                      ; ctrl:controller|linha_ctrl[1]              ; clk          ; clk         ; 0.000        ; -0.005     ; 1.021      ;
+; 0.762 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.084      ; 1.112      ;
+; 0.765 ; dp:datapath|output_4[3]                    ; hex4[1]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.821      ;
+; 0.771 ; dp:datapath|teste[0]                       ; dp:datapath|teste[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.037      ;
+; 0.783 ; dp:datapath|output_4[3]                    ; hex4[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.839      ;
+; 0.786 ; dp:datapath|output_4[3]                    ; hex4[2]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.842      ;
+; 0.793 ; dp:datapath|output_4[3]                    ; hex4[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.849      ;
+; 0.794 ; dp:datapath|output_4[3]                    ; hex4[3]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.850      ;
+; 0.794 ; dp:datapath|output_4[3]                    ; hex4[5]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.850      ;
+; 0.795 ; dp:datapath|output_4[3]                    ; hex4[6]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.851      ;
+; 0.796 ; dp:datapath|teste[1]                       ; dp:datapath|teste[0]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.062      ;
+; 0.805 ; dp:datapath|alu_in1[2]                     ; dp:datapath|alu:alu1|output[2]             ; clk          ; clk         ; 0.000        ; 0.445      ; 1.516      ;
+; 0.821 ; dp:datapath|output_4[0]                    ; hex5[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.877      ;
+; 0.821 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[3]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.518      ;
+; 0.826 ; dp:datapath|rf:registrador|out2[0]         ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.003      ; 1.095      ;
+; 0.833 ; ctrl:controller|imm[1]                     ; dp:datapath|imm_sig[1]                     ; clk          ; clk         ; 0.000        ; -0.005     ; 1.094      ;
+; 0.833 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[3]                      ; clk          ; clk         ; 0.000        ; 0.176      ; 1.275      ;
+; 0.838 ; ctrl:controller|estado_atual[3]            ; dp:datapath|enable_reg                     ; clk          ; clk         ; 0.000        ; 0.014      ; 1.118      ;
+; 0.842 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[1]             ; clk          ; clk         ; 0.000        ; 0.431      ; 1.539      ;
+; 0.846 ; ctrl:controller|state.s6                   ; ctrl:controller|state.s1                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.112      ;
+; 0.868 ; dp:datapath|opcode_sig[2]                  ; hex2[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.357      ; 1.491      ;
+; 0.869 ; ctrl:controller|imm[0]                     ; dp:datapath|imm_sig[0]                     ; clk          ; clk         ; 0.000        ; -0.005     ; 1.130      ;
+; 0.905 ; dp:datapath|rf:registrador|output[1]       ; dp:datapath|acu_in[1]                      ; clk          ; clk         ; 0.000        ; -0.212     ; 0.959      ;
+; 0.926 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[0] ; clk          ; clk         ; 0.000        ; 0.001      ; 1.193      ;
+; 0.926 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[1] ; clk          ; clk         ; 0.000        ; 0.001      ; 1.193      ;
+; 0.926 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[2] ; clk          ; clk         ; 0.000        ; 0.001      ; 1.193      ;
+; 0.926 ; dp:datapath|enable_acu                     ; dp:datapath|acc:acumulador_atual|output[3] ; clk          ; clk         ; 0.000        ; 0.001      ; 1.193      ;
+; 0.931 ; dp:datapath|rf:registrador|out1[3]         ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; -0.016     ; 1.181      ;
+; 0.937 ; dp:datapath|rf:registrador|out3[2]         ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; -0.017     ; 1.186      ;
+; 0.938 ; dp:datapath|rf:registrador|out3[0]         ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; -0.017     ; 1.187      ;
+; 0.941 ; dp:datapath|output_4[3]                    ; hex5[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.790      ; 1.997      ;
+; 0.970 ; ctrl:controller|state.s5                   ; ctrl:controller|state.s6                   ; clk          ; clk         ; 0.000        ; 0.008      ; 1.244      ;
+; 0.994 ; dp:datapath|dado[3]                        ; dp:datapath|rf:registrador|out3[3]         ; clk          ; clk         ; 0.000        ; 0.004      ; 1.264      ;
+; 0.995 ; dp:datapath|dado[3]                        ; dp:datapath|rf:registrador|out1[3]         ; clk          ; clk         ; 0.000        ; 0.003      ; 1.264      ;
+; 0.998 ; dp:datapath|dado[2]                        ; dp:datapath|rf:registrador|out3[2]         ; clk          ; clk         ; 0.000        ; 0.004      ; 1.268      ;
+; 1.000 ; dp:datapath|dado[2]                        ; dp:datapath|rf:registrador|out1[2]         ; clk          ; clk         ; 0.000        ; 0.003      ; 1.269      ;
+; 1.003 ; dp:datapath|rf:registrador|out2[2]         ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.003      ; 1.272      ;
+; 1.008 ; ctrl:controller|state.s3                   ; ctrl:controller|linha_ctrl[0]              ; clk          ; clk         ; 0.000        ; 0.414      ; 1.688      ;
 +-------+--------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -468,9 +468,9 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|imm[2]          ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|imm[3]          ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|imm[3]          ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|state.done      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|state.done      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|state.s0        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|linha_ctrl[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|linha_ctrl[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|linha_ctrl[1]   ;
 +--------+--------------+----------------+------------------+-------+------------+---------------------------------+
 
 
@@ -479,8 +479,8 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; rst       ; clk        ; 1.678 ; 1.678 ; Fall       ; clk             ;
-; start     ; clk        ; 5.889 ; 5.889 ; Fall       ; clk             ;
+; rst       ; clk        ; 1.494 ; 1.494 ; Fall       ; clk             ;
+; start     ; clk        ; 5.681 ; 5.681 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -489,8 +489,8 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; rst       ; clk        ; 0.004  ; 0.004  ; Fall       ; clk             ;
-; start     ; clk        ; -5.353 ; -5.353 ; Fall       ; clk             ;
+; rst       ; clk        ; 0.329  ; 0.329  ; Fall       ; clk             ;
+; start     ; clk        ; -5.176 ; -5.176 ; Fall       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -499,39 +499,57 @@ No paths to report.
 +------------+------------+--------+--------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------+------------+--------+--------+------------+-----------------+
-; hex0[*]    ; clk        ; 8.965  ; 8.965  ; Fall       ; clk             ;
-;  hex0[0]   ; clk        ; 8.965  ; 8.965  ; Fall       ; clk             ;
-;  hex0[3]   ; clk        ; 8.937  ; 8.937  ; Fall       ; clk             ;
-;  hex0[4]   ; clk        ; 8.937  ; 8.937  ; Fall       ; clk             ;
-;  hex0[5]   ; clk        ; 8.667  ; 8.667  ; Fall       ; clk             ;
-; hex1[*]    ; clk        ; 8.024  ; 8.024  ; Fall       ; clk             ;
-;  hex1[0]   ; clk        ; 8.024  ; 8.024  ; Fall       ; clk             ;
-;  hex1[3]   ; clk        ; 7.896  ; 7.896  ; Fall       ; clk             ;
-;  hex1[4]   ; clk        ; 7.916  ; 7.916  ; Fall       ; clk             ;
-;  hex1[5]   ; clk        ; 7.561  ; 7.561  ; Fall       ; clk             ;
-; hex2[*]    ; clk        ; 7.615  ; 7.615  ; Fall       ; clk             ;
-;  hex2[0]   ; clk        ; 7.601  ; 7.601  ; Fall       ; clk             ;
-;  hex2[3]   ; clk        ; 7.615  ; 7.615  ; Fall       ; clk             ;
-;  hex2[4]   ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-;  hex2[5]   ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-; hex3[*]    ; clk        ; 7.635  ; 7.635  ; Fall       ; clk             ;
-;  hex3[0]   ; clk        ; 7.635  ; 7.635  ; Fall       ; clk             ;
-;  hex3[3]   ; clk        ; 7.584  ; 7.584  ; Fall       ; clk             ;
-;  hex3[4]   ; clk        ; 7.584  ; 7.584  ; Fall       ; clk             ;
-;  hex3[5]   ; clk        ; 7.259  ; 7.259  ; Fall       ; clk             ;
-; hex4[*]    ; clk        ; 10.951 ; 10.951 ; Fall       ; clk             ;
-;  hex4[0]   ; clk        ; 9.044  ; 9.044  ; Fall       ; clk             ;
-;  hex4[1]   ; clk        ; 8.480  ; 8.480  ; Fall       ; clk             ;
-;  hex4[2]   ; clk        ; 9.069  ; 9.069  ; Fall       ; clk             ;
-;  hex4[3]   ; clk        ; 10.951 ; 10.951 ; Fall       ; clk             ;
-;  hex4[4]   ; clk        ; 8.602  ; 8.602  ; Fall       ; clk             ;
-;  hex4[5]   ; clk        ; 9.166  ; 9.166  ; Fall       ; clk             ;
-;  hex4[6]   ; clk        ; 8.829  ; 8.829  ; Fall       ; clk             ;
-; output[*]  ; clk        ; 6.033  ; 6.033  ; Fall       ; clk             ;
-;  output[0] ; clk        ; 5.980  ; 5.980  ; Fall       ; clk             ;
-;  output[1] ; clk        ; 5.972  ; 5.972  ; Fall       ; clk             ;
-;  output[2] ; clk        ; 6.033  ; 6.033  ; Fall       ; clk             ;
-;  output[3] ; clk        ; 5.940  ; 5.940  ; Fall       ; clk             ;
+; hex0[*]    ; clk        ; 9.471  ; 9.471  ; Fall       ; clk             ;
+;  hex0[0]   ; clk        ; 9.471  ; 9.471  ; Fall       ; clk             ;
+;  hex0[3]   ; clk        ; 9.447  ; 9.447  ; Fall       ; clk             ;
+;  hex0[4]   ; clk        ; 9.447  ; 9.447  ; Fall       ; clk             ;
+;  hex0[5]   ; clk        ; 9.204  ; 9.204  ; Fall       ; clk             ;
+; hex1[*]    ; clk        ; 8.709  ; 8.709  ; Fall       ; clk             ;
+;  hex1[0]   ; clk        ; 8.709  ; 8.709  ; Fall       ; clk             ;
+;  hex1[3]   ; clk        ; 8.537  ; 8.537  ; Fall       ; clk             ;
+;  hex1[4]   ; clk        ; 8.557  ; 8.557  ; Fall       ; clk             ;
+;  hex1[5]   ; clk        ; 8.536  ; 8.536  ; Fall       ; clk             ;
+; hex2[*]    ; clk        ; 8.676  ; 8.676  ; Fall       ; clk             ;
+;  hex2[0]   ; clk        ; 8.626  ; 8.626  ; Fall       ; clk             ;
+;  hex2[3]   ; clk        ; 8.676  ; 8.676  ; Fall       ; clk             ;
+;  hex2[4]   ; clk        ; 8.645  ; 8.645  ; Fall       ; clk             ;
+;  hex2[5]   ; clk        ; 8.645  ; 8.645  ; Fall       ; clk             ;
+; hex3[*]    ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[0]   ; clk        ; 8.252  ; 8.252  ; Fall       ; clk             ;
+;  hex3[3]   ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[4]   ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[5]   ; clk        ; 7.941  ; 7.941  ; Fall       ; clk             ;
+; hex4[*]    ; clk        ; 11.019 ; 11.019 ; Fall       ; clk             ;
+;  hex4[0]   ; clk        ; 9.451  ; 9.451  ; Fall       ; clk             ;
+;  hex4[1]   ; clk        ; 11.019 ; 11.019 ; Fall       ; clk             ;
+;  hex4[2]   ; clk        ; 9.598  ; 9.598  ; Fall       ; clk             ;
+;  hex4[3]   ; clk        ; 9.177  ; 9.177  ; Fall       ; clk             ;
+;  hex4[4]   ; clk        ; 9.605  ; 9.605  ; Fall       ; clk             ;
+;  hex4[5]   ; clk        ; 10.849 ; 10.849 ; Fall       ; clk             ;
+;  hex4[6]   ; clk        ; 10.549 ; 10.549 ; Fall       ; clk             ;
+; hex5[*]    ; clk        ; 9.677  ; 9.677  ; Fall       ; clk             ;
+;  hex5[0]   ; clk        ; 8.073  ; 8.073  ; Fall       ; clk             ;
+;  hex5[3]   ; clk        ; 9.677  ; 9.677  ; Fall       ; clk             ;
+;  hex5[4]   ; clk        ; 9.167  ; 9.167  ; Fall       ; clk             ;
+;  hex5[5]   ; clk        ; 8.390  ; 8.390  ; Fall       ; clk             ;
+; hex6[*]    ; clk        ; 10.238 ; 10.238 ; Fall       ; clk             ;
+;  hex6[0]   ; clk        ; 9.125  ; 9.125  ; Fall       ; clk             ;
+;  hex6[1]   ; clk        ; 10.238 ; 10.238 ; Fall       ; clk             ;
+;  hex6[2]   ; clk        ; 8.261  ; 8.261  ; Fall       ; clk             ;
+;  hex6[3]   ; clk        ; 9.125  ; 9.125  ; Fall       ; clk             ;
+;  hex6[4]   ; clk        ; 9.098  ; 9.098  ; Fall       ; clk             ;
+;  hex6[5]   ; clk        ; 7.768  ; 7.768  ; Fall       ; clk             ;
+;  hex6[6]   ; clk        ; 7.577  ; 7.577  ; Fall       ; clk             ;
+; hex7[*]    ; clk        ; 8.818  ; 8.818  ; Fall       ; clk             ;
+;  hex7[0]   ; clk        ; 7.868  ; 7.868  ; Fall       ; clk             ;
+;  hex7[3]   ; clk        ; 8.053  ; 8.053  ; Fall       ; clk             ;
+;  hex7[4]   ; clk        ; 8.818  ; 8.818  ; Fall       ; clk             ;
+;  hex7[5]   ; clk        ; 8.299  ; 8.299  ; Fall       ; clk             ;
+; output[*]  ; clk        ; 8.540  ; 8.540  ; Fall       ; clk             ;
+;  output[0] ; clk        ; 8.540  ; 8.540  ; Fall       ; clk             ;
+;  output[1] ; clk        ; 8.506  ; 8.506  ; Fall       ; clk             ;
+;  output[2] ; clk        ; 8.492  ; 8.492  ; Fall       ; clk             ;
+;  output[3] ; clk        ; 8.474  ; 8.474  ; Fall       ; clk             ;
 +------------+------------+--------+--------+------------+-----------------+
 
 
@@ -540,39 +558,57 @@ No paths to report.
 +------------+------------+--------+--------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------+------------+--------+--------+------------+-----------------+
-; hex0[*]    ; clk        ; 8.667  ; 8.667  ; Fall       ; clk             ;
-;  hex0[0]   ; clk        ; 8.965  ; 8.965  ; Fall       ; clk             ;
-;  hex0[3]   ; clk        ; 8.937  ; 8.937  ; Fall       ; clk             ;
-;  hex0[4]   ; clk        ; 8.937  ; 8.937  ; Fall       ; clk             ;
-;  hex0[5]   ; clk        ; 8.667  ; 8.667  ; Fall       ; clk             ;
-; hex1[*]    ; clk        ; 7.561  ; 7.561  ; Fall       ; clk             ;
-;  hex1[0]   ; clk        ; 8.024  ; 8.024  ; Fall       ; clk             ;
-;  hex1[3]   ; clk        ; 7.896  ; 7.896  ; Fall       ; clk             ;
-;  hex1[4]   ; clk        ; 7.916  ; 7.916  ; Fall       ; clk             ;
-;  hex1[5]   ; clk        ; 7.561  ; 7.561  ; Fall       ; clk             ;
-; hex2[*]    ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-;  hex2[0]   ; clk        ; 7.601  ; 7.601  ; Fall       ; clk             ;
-;  hex2[3]   ; clk        ; 7.615  ; 7.615  ; Fall       ; clk             ;
-;  hex2[4]   ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-;  hex2[5]   ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-; hex3[*]    ; clk        ; 7.259  ; 7.259  ; Fall       ; clk             ;
-;  hex3[0]   ; clk        ; 7.635  ; 7.635  ; Fall       ; clk             ;
-;  hex3[3]   ; clk        ; 7.584  ; 7.584  ; Fall       ; clk             ;
-;  hex3[4]   ; clk        ; 7.584  ; 7.584  ; Fall       ; clk             ;
-;  hex3[5]   ; clk        ; 7.259  ; 7.259  ; Fall       ; clk             ;
-; hex4[*]    ; clk        ; 8.480  ; 8.480  ; Fall       ; clk             ;
-;  hex4[0]   ; clk        ; 9.044  ; 9.044  ; Fall       ; clk             ;
-;  hex4[1]   ; clk        ; 8.480  ; 8.480  ; Fall       ; clk             ;
-;  hex4[2]   ; clk        ; 9.069  ; 9.069  ; Fall       ; clk             ;
-;  hex4[3]   ; clk        ; 10.951 ; 10.951 ; Fall       ; clk             ;
-;  hex4[4]   ; clk        ; 8.602  ; 8.602  ; Fall       ; clk             ;
-;  hex4[5]   ; clk        ; 9.166  ; 9.166  ; Fall       ; clk             ;
-;  hex4[6]   ; clk        ; 8.829  ; 8.829  ; Fall       ; clk             ;
-; output[*]  ; clk        ; 5.940  ; 5.940  ; Fall       ; clk             ;
-;  output[0] ; clk        ; 5.980  ; 5.980  ; Fall       ; clk             ;
-;  output[1] ; clk        ; 5.972  ; 5.972  ; Fall       ; clk             ;
-;  output[2] ; clk        ; 6.033  ; 6.033  ; Fall       ; clk             ;
-;  output[3] ; clk        ; 5.940  ; 5.940  ; Fall       ; clk             ;
+; hex0[*]    ; clk        ; 9.204  ; 9.204  ; Fall       ; clk             ;
+;  hex0[0]   ; clk        ; 9.471  ; 9.471  ; Fall       ; clk             ;
+;  hex0[3]   ; clk        ; 9.447  ; 9.447  ; Fall       ; clk             ;
+;  hex0[4]   ; clk        ; 9.447  ; 9.447  ; Fall       ; clk             ;
+;  hex0[5]   ; clk        ; 9.204  ; 9.204  ; Fall       ; clk             ;
+; hex1[*]    ; clk        ; 8.536  ; 8.536  ; Fall       ; clk             ;
+;  hex1[0]   ; clk        ; 8.709  ; 8.709  ; Fall       ; clk             ;
+;  hex1[3]   ; clk        ; 8.537  ; 8.537  ; Fall       ; clk             ;
+;  hex1[4]   ; clk        ; 8.557  ; 8.557  ; Fall       ; clk             ;
+;  hex1[5]   ; clk        ; 8.536  ; 8.536  ; Fall       ; clk             ;
+; hex2[*]    ; clk        ; 8.626  ; 8.626  ; Fall       ; clk             ;
+;  hex2[0]   ; clk        ; 8.626  ; 8.626  ; Fall       ; clk             ;
+;  hex2[3]   ; clk        ; 8.676  ; 8.676  ; Fall       ; clk             ;
+;  hex2[4]   ; clk        ; 8.645  ; 8.645  ; Fall       ; clk             ;
+;  hex2[5]   ; clk        ; 8.645  ; 8.645  ; Fall       ; clk             ;
+; hex3[*]    ; clk        ; 7.941  ; 7.941  ; Fall       ; clk             ;
+;  hex3[0]   ; clk        ; 8.252  ; 8.252  ; Fall       ; clk             ;
+;  hex3[3]   ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[4]   ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[5]   ; clk        ; 7.941  ; 7.941  ; Fall       ; clk             ;
+; hex4[*]    ; clk        ; 9.177  ; 9.177  ; Fall       ; clk             ;
+;  hex4[0]   ; clk        ; 9.451  ; 9.451  ; Fall       ; clk             ;
+;  hex4[1]   ; clk        ; 11.019 ; 11.019 ; Fall       ; clk             ;
+;  hex4[2]   ; clk        ; 9.598  ; 9.598  ; Fall       ; clk             ;
+;  hex4[3]   ; clk        ; 9.177  ; 9.177  ; Fall       ; clk             ;
+;  hex4[4]   ; clk        ; 9.605  ; 9.605  ; Fall       ; clk             ;
+;  hex4[5]   ; clk        ; 10.849 ; 10.849 ; Fall       ; clk             ;
+;  hex4[6]   ; clk        ; 10.549 ; 10.549 ; Fall       ; clk             ;
+; hex5[*]    ; clk        ; 8.073  ; 8.073  ; Fall       ; clk             ;
+;  hex5[0]   ; clk        ; 8.073  ; 8.073  ; Fall       ; clk             ;
+;  hex5[3]   ; clk        ; 9.677  ; 9.677  ; Fall       ; clk             ;
+;  hex5[4]   ; clk        ; 9.167  ; 9.167  ; Fall       ; clk             ;
+;  hex5[5]   ; clk        ; 8.390  ; 8.390  ; Fall       ; clk             ;
+; hex6[*]    ; clk        ; 7.577  ; 7.577  ; Fall       ; clk             ;
+;  hex6[0]   ; clk        ; 9.125  ; 9.125  ; Fall       ; clk             ;
+;  hex6[1]   ; clk        ; 10.238 ; 10.238 ; Fall       ; clk             ;
+;  hex6[2]   ; clk        ; 8.261  ; 8.261  ; Fall       ; clk             ;
+;  hex6[3]   ; clk        ; 9.125  ; 9.125  ; Fall       ; clk             ;
+;  hex6[4]   ; clk        ; 9.098  ; 9.098  ; Fall       ; clk             ;
+;  hex6[5]   ; clk        ; 7.768  ; 7.768  ; Fall       ; clk             ;
+;  hex6[6]   ; clk        ; 7.577  ; 7.577  ; Fall       ; clk             ;
+; hex7[*]    ; clk        ; 7.868  ; 7.868  ; Fall       ; clk             ;
+;  hex7[0]   ; clk        ; 7.868  ; 7.868  ; Fall       ; clk             ;
+;  hex7[3]   ; clk        ; 8.053  ; 8.053  ; Fall       ; clk             ;
+;  hex7[4]   ; clk        ; 8.818  ; 8.818  ; Fall       ; clk             ;
+;  hex7[5]   ; clk        ; 8.299  ; 8.299  ; Fall       ; clk             ;
+; output[*]  ; clk        ; 8.474  ; 8.474  ; Fall       ; clk             ;
+;  output[0] ; clk        ; 8.540  ; 8.540  ; Fall       ; clk             ;
+;  output[1] ; clk        ; 8.506  ; 8.506  ; Fall       ; clk             ;
+;  output[2] ; clk        ; 8.492  ; 8.492  ; Fall       ; clk             ;
+;  output[3] ; clk        ; 8.474  ; 8.474  ; Fall       ; clk             ;
 +------------+------------+--------+--------+------------+-----------------+
 
 
@@ -581,7 +617,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -1.173 ; -39.535       ;
+; clk   ; -1.120 ; -38.591       ;
 +-------+--------+---------------+
 
 
@@ -590,7 +626,7 @@ No paths to report.
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 0.209 ; 0.000         ;
+; clk   ; 0.101 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -611,7 +647,7 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -1.222 ; -131.222              ;
+; clk   ; -1.222 ; -154.222              ;
 +-------+--------+-----------------------+
 
 
@@ -620,215 +656,215 @@ No paths to report.
 +--------+------------------------+------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node              ; To Node                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------+------------------------+--------------+-------------+--------------+------------+------------+
-; -1.173 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 2.201      ;
-; -1.147 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.174      ;
-; -1.143 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.170      ;
-; -1.139 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 2.167      ;
-; -1.113 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.140      ;
-; -1.109 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.136      ;
-; -1.096 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 2.124      ;
-; -1.087 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 2.136      ;
-; -1.078 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.105      ;
-; -1.070 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.097      ;
-; -1.067 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 2.095      ;
-; -1.066 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.093      ;
-; -1.053 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 2.102      ;
-; -1.044 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.071      ;
-; -1.041 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.068      ;
-; -1.037 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.064      ;
-; -1.027 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 2.055      ;
-; -1.011 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.038      ;
-; -1.010 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 2.059      ;
-; -1.007 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.034      ;
-; -1.001 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.028      ;
-; -1.001 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.028      ;
-; -0.997 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.024      ;
-; -0.991 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 2.019      ;
-; -0.981 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 2.030      ;
-; -0.977 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.004      ;
-; -0.973 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.000      ;
-; -0.973 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 2.000      ;
-; -0.972 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.999      ;
-; -0.965 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.992      ;
-; -0.961 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.988      ;
-; -0.952 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 1.980      ;
-; -0.947 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.001      ; 1.980      ;
-; -0.941 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.990      ;
-; -0.939 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.966      ;
-; -0.934 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.961      ;
-; -0.932 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.959      ;
-; -0.930 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.957      ;
-; -0.926 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.953      ;
-; -0.923 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.004     ; 1.951      ;
-; -0.922 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.949      ;
-; -0.921 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.953      ;
-; -0.917 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.949      ;
-; -0.914 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.001      ; 1.947      ;
-; -0.905 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.954      ;
-; -0.905 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.932      ;
-; -0.901 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.928      ;
-; -0.897 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.924      ;
-; -0.896 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.923      ;
-; -0.896 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.923      ;
-; -0.893 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.920      ;
-; -0.888 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.920      ;
-; -0.884 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.916      ;
-; -0.872 ; ctrl:controller|PC[10] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.001      ; 1.905      ;
-; -0.867 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.894      ;
-; -0.866 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.915      ;
-; -0.865 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.892      ;
-; -0.861 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.022      ; 1.915      ;
-; -0.861 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.888      ;
-; -0.857 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.884      ;
-; -0.853 ; ctrl:controller|PC[11] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.001      ; 1.886      ;
-; -0.852 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.884      ;
-; -0.846 ; ctrl:controller|PC[10] ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.878      ;
-; -0.842 ; ctrl:controller|PC[10] ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.874      ;
-; -0.837 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.886      ;
-; -0.829 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.856      ;
-; -0.828 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.022      ; 1.882      ;
-; -0.828 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.855      ;
-; -0.827 ; ctrl:controller|PC[11] ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.859      ;
-; -0.827 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.854      ;
-; -0.825 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.852      ;
-; -0.823 ; ctrl:controller|PC[11] ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.855      ;
-; -0.819 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.851      ;
-; -0.817 ; ctrl:controller|PC[21] ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.832      ;
-; -0.816 ; ctrl:controller|PC[21] ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.831      ;
-; -0.815 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.847      ;
-; -0.814 ; ctrl:controller|PC[21] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.829      ;
-; -0.814 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.846      ;
-; -0.812 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.844      ;
-; -0.807 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[23] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.856      ;
-; -0.804 ; ctrl:controller|PC[23] ; ctrl:controller|PC[1]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.819      ;
-; -0.803 ; ctrl:controller|PC[23] ; ctrl:controller|PC[3]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.818      ;
-; -0.801 ; ctrl:controller|PC[23] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.816      ;
-; -0.791 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.818      ;
-; -0.790 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.817      ;
-; -0.787 ; ctrl:controller|PC[21] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.802      ;
-; -0.786 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[15] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.835      ;
-; -0.786 ; ctrl:controller|PC[10] ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.022      ; 1.840      ;
-; -0.786 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.005     ; 1.813      ;
-; -0.785 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.817      ;
-; -0.785 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.817      ;
-; -0.784 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.833      ;
-; -0.781 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.813      ;
-; -0.777 ; ctrl:controller|PC[10] ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.809      ;
-; -0.774 ; ctrl:controller|PC[23] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.017     ; 1.789      ;
-; -0.773 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[23] ; clk          ; clk         ; 1.000        ; 0.017      ; 1.822      ;
-; -0.767 ; ctrl:controller|PC[11] ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.022      ; 1.821      ;
-; -0.763 ; ctrl:controller|PC[21] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; -0.025     ; 1.770      ;
-; -0.763 ; ctrl:controller|PC[21] ; ctrl:controller|PC[14] ; clk          ; clk         ; 1.000        ; -0.025     ; 1.770      ;
-; -0.762 ; ctrl:controller|PC[21] ; ctrl:controller|PC[13] ; clk          ; clk         ; 1.000        ; -0.025     ; 1.769      ;
+; -1.120 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.152      ;
+; -1.115 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 2.124      ;
+; -1.085 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.232      ;
+; -1.080 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.204      ;
+; -1.051 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.083      ;
+; -1.041 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 2.050      ;
+; -1.025 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.172      ;
+; -1.020 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.144      ;
+; -1.016 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.163      ;
+; -1.015 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.162      ;
+; -1.010 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.134      ;
+; -1.006 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.130      ;
+; -1.001 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 2.010      ;
+; -0.993 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.023      ; 2.048      ;
+; -0.988 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.135      ;
+; -0.988 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.020      ;
+; -0.983 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.107      ;
+; -0.966 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.090      ;
+; -0.960 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 1.969      ;
+; -0.956 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.103      ;
+; -0.946 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.070      ;
+; -0.946 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.093      ;
+; -0.939 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 1.948      ;
+; -0.936 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.060      ;
+; -0.925 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.049      ;
+; -0.924 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.023      ; 1.979      ;
+; -0.922 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.125      ; 2.079      ;
+; -0.919 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.115      ; 2.066      ;
+; -0.917 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.102      ; 2.051      ;
+; -0.914 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.946      ;
+; -0.909 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.033      ;
+; -0.906 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.030      ;
+; -0.904 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.028      ;
+; -0.901 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 1.910      ;
+; -0.899 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.125      ; 2.056      ;
+; -0.896 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.092      ; 2.020      ;
+; -0.894 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.102      ; 2.028      ;
+; -0.880 ; ctrl:controller|PC[12] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.115     ; 1.797      ;
+; -0.874 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.906      ;
+; -0.869 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.993      ;
+; -0.866 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.990      ;
+; -0.865 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.989      ;
+; -0.855 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.979      ;
+; -0.853 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[21] ; clk          ; clk         ; 1.000        ; 0.023      ; 1.908      ;
+; -0.853 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.125      ; 2.010      ;
+; -0.849 ; ctrl:controller|PC[13] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.115     ; 1.766      ;
+; -0.848 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.880      ;
+; -0.845 ; ctrl:controller|PC[12] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.877      ;
+; -0.844 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.968      ;
+; -0.843 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.102      ; 1.977      ;
+; -0.834 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.958      ;
+; -0.833 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.865      ;
+; -0.832 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; 0.125      ; 1.989      ;
+; -0.830 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.125      ; 1.987      ;
+; -0.828 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.952      ;
+; -0.827 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; 0.102      ; 1.961      ;
+; -0.822 ; ctrl:controller|PC[0]  ; ctrl:controller|PC[19] ; clk          ; clk         ; 1.000        ; 0.115      ; 1.969      ;
+; -0.822 ; ctrl:controller|PC[14] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.115     ; 1.739      ;
+; -0.820 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.102      ; 1.954      ;
+; -0.817 ; ctrl:controller|PC[1]  ; ctrl:controller|PC[19] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.941      ;
+; -0.814 ; ctrl:controller|PC[13] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.846      ;
+; -0.812 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.844      ;
+; -0.807 ; ctrl:controller|PC[6]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.931      ;
+; -0.806 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.930      ;
+; -0.803 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.102      ; 1.937      ;
+; -0.797 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 1.806      ;
+; -0.796 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.920      ;
+; -0.787 ; ctrl:controller|PC[14] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.819      ;
+; -0.785 ; ctrl:controller|PC[12] ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.817      ;
+; -0.784 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[21] ; clk          ; clk         ; 1.000        ; 0.023      ; 1.839      ;
+; -0.783 ; ctrl:controller|PC[13] ; ctrl:controller|PC[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.815      ;
+; -0.783 ; ctrl:controller|PC[15] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.115     ; 1.700      ;
+; -0.781 ; ctrl:controller|PC[9]  ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.023     ; 1.790      ;
+; -0.780 ; ctrl:controller|PC[4]  ; ctrl:controller|PC[27] ; clk          ; clk         ; 1.000        ; 0.102      ; 1.914      ;
+; -0.780 ; ctrl:controller|PC[24] ; ctrl:controller|PC[16] ; clk          ; clk         ; 1.000        ; -0.010     ; 1.802      ;
+; -0.777 ; ctrl:controller|PC[13] ; ctrl:controller|PC[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.809      ;
+; -0.775 ; ctrl:controller|PC[12] ; ctrl:controller|PC[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.807      ;
+; -0.774 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.806      ;
+; -0.774 ; ctrl:controller|PC[3]  ; ctrl:controller|PC[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.806      ;
+; -0.774 ; ctrl:controller|PC[24] ; ctrl:controller|PC[18] ; clk          ; clk         ; 1.000        ; -0.010     ; 1.796      ;
+; -0.773 ; ctrl:controller|PC[13] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.115     ; 1.690      ;
+; -0.771 ; ctrl:controller|PC[13] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.115     ; 1.688      ;
+; -0.771 ; ctrl:controller|PC[24] ; ctrl:controller|PC[26] ; clk          ; clk         ; 1.000        ; -0.125     ; 1.678      ;
+; -0.770 ; ctrl:controller|PC[13] ; ctrl:controller|PC[9]  ; clk          ; clk         ; 1.000        ; -0.092     ; 1.710      ;
+; -0.770 ; ctrl:controller|PC[24] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.125     ; 1.677      ;
+; -0.770 ; ctrl:controller|PC[24] ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; -0.010     ; 1.792      ;
+; -0.769 ; ctrl:controller|PC[7]  ; ctrl:controller|PC[28] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.893      ;
+; -0.768 ; ctrl:controller|PC[13] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.800      ;
+; -0.768 ; ctrl:controller|PC[12] ; ctrl:controller|PC[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.800      ;
+; -0.768 ; ctrl:controller|PC[24] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.125     ; 1.675      ;
+; -0.767 ; ctrl:controller|PC[24] ; ctrl:controller|PC[9]  ; clk          ; clk         ; 1.000        ; -0.102     ; 1.697      ;
+; -0.765 ; ctrl:controller|PC[24] ; ctrl:controller|PC[12] ; clk          ; clk         ; 1.000        ; -0.010     ; 1.787      ;
+; -0.763 ; ctrl:controller|PC[2]  ; ctrl:controller|PC[25] ; clk          ; clk         ; 1.000        ; 0.125      ; 1.920      ;
+; -0.762 ; ctrl:controller|PC[8]  ; ctrl:controller|PC[31] ; clk          ; clk         ; 1.000        ; 0.092      ; 1.886      ;
+; -0.762 ; ctrl:controller|PC[5]  ; ctrl:controller|PC[24] ; clk          ; clk         ; 1.000        ; 0.102      ; 1.896      ;
+; -0.762 ; ctrl:controller|PC[12] ; ctrl:controller|PC[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.794      ;
+; -0.758 ; ctrl:controller|PC[12] ; ctrl:controller|PC[2]  ; clk          ; clk         ; 1.000        ; -0.115     ; 1.675      ;
+; -0.756 ; ctrl:controller|PC[12] ; ctrl:controller|PC[0]  ; clk          ; clk         ; 1.000        ; -0.115     ; 1.673      ;
+; -0.755 ; ctrl:controller|PC[12] ; ctrl:controller|PC[9]  ; clk          ; clk         ; 1.000        ; -0.092     ; 1.695      ;
+; -0.754 ; ctrl:controller|PC[13] ; ctrl:controller|PC[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.786      ;
 +--------+------------------------+------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Hold: 'clk'                                                                                                                                                ;
-+-------+--------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node                                  ; To Node                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.209 ; ctrl:controller|imm[1]                     ; dp:datapath|imm_sig[1]                     ; clk          ; clk         ; 0.000        ; 0.058      ; 0.419      ;
-; 0.210 ; ctrl:controller|imm[2]                     ; dp:datapath|imm_sig[2]                     ; clk          ; clk         ; 0.000        ; 0.058      ; 0.420      ;
-; 0.215 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s0                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ctrl:controller|PC[0]                      ; ctrl:controller|PC[0]                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ctrl:controller|PC[31]                     ; ctrl:controller|PC[31]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ctrl:controller|state.done                 ; ctrl:controller|state.done                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; dp:datapath|enable_reg                     ; dp:datapath|enable_reg                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; dp:datapath|enable_acu                     ; dp:datapath|enable_acu                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ctrl:controller|imm[0]                     ; ctrl:controller|imm[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; dp:datapath|teste[0]                       ; dp:datapath|teste[0]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; dp:datapath|teste[1]                       ; dp:datapath|teste[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; hex0[0]~reg0                               ; hex0[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; hex4[6]~reg0                               ; hex4[6]~reg0                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.229 ; dp:datapath|rf:registrador|out2[2]         ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.145      ; 0.526      ;
-; 0.239 ; ctrl:controller|state.s5                   ; ctrl:controller|state.s6                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.391      ;
-; 0.241 ; ctrl:controller|state.s4                   ; ctrl:controller|state.s5                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.393      ;
-; 0.243 ; ctrl:controller|imm[3]                     ; dp:datapath|imm_sig[3]                     ; clk          ; clk         ; 0.000        ; 0.058      ; 0.453      ;
-; 0.244 ; ctrl:controller|state.s1                   ; ctrl:controller|state.s2                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.396      ;
-; 0.247 ; ctrl:controller|OPCODE[3]                  ; ctrl:controller|estado_atual[3]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.399      ;
-; 0.248 ; ctrl:controller|state.s2                   ; ctrl:controller|state.s3                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.400      ;
-; 0.266 ; ctrl:controller|state.done                 ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.418      ;
-; 0.267 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s1                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.419      ;
-; 0.267 ; ctrl:controller|state.done                 ; ctrl:controller|estado_atual[0]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.419      ;
-; 0.267 ; ctrl:controller|state.done                 ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.419      ;
-; 0.272 ; ctrl:controller|estado_atual[3]            ; dp:datapath|opcode_sig[3]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.424      ;
-; 0.272 ; ctrl:controller|imm[0]                     ; dp:datapath|imm_sig[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.424      ;
-; 0.300 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.452      ;
-; 0.304 ; dp:datapath|rf:registrador|out2[0]         ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.145      ; 0.601      ;
-; 0.305 ; dp:datapath|rf:registrador|out3[0]         ; dp:datapath|rf:registrador|output[0]       ; clk          ; clk         ; 0.000        ; 0.018      ; 0.475      ;
-; 0.316 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.468      ;
-; 0.320 ; ctrl:controller|imm[3]                     ; dp:datapath|dd[1]                          ; clk          ; clk         ; 0.000        ; 0.135      ; 0.607      ;
-; 0.323 ; dp:datapath|acu_in[0]                      ; dp:datapath|acc:acumulador_atual|output[0] ; clk          ; clk         ; 0.000        ; -0.010     ; 0.465      ;
-; 0.336 ; dp:datapath|acu_in[1]                      ; dp:datapath|acc:acumulador_atual|output[1] ; clk          ; clk         ; 0.000        ; -0.010     ; 0.478      ;
-; 0.336 ; dp:datapath|acu_in[2]                      ; dp:datapath|acc:acumulador_atual|output[2] ; clk          ; clk         ; 0.000        ; -0.010     ; 0.478      ;
-; 0.337 ; dp:datapath|acu_in[3]                      ; dp:datapath|acc:acumulador_atual|output[3] ; clk          ; clk         ; 0.000        ; -0.010     ; 0.479      ;
-; 0.348 ; ctrl:controller|state.s3                   ; ctrl:controller|state.s4                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.500      ;
-; 0.358 ; dp:datapath|rf:registrador|out3[3]         ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; 0.018      ; 0.528      ;
-; 0.360 ; dp:datapath|alu_in1[0]                     ; dp:datapath|alu:alu1|output[0]             ; clk          ; clk         ; 0.000        ; 0.032      ; 0.544      ;
-; 0.361 ; dp:datapath|teste[0]                       ; dp:datapath|teste[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.367 ; ctrl:controller|state.s6                   ; ctrl:controller|state.done                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
-; 0.371 ; ctrl:controller|state.s6                   ; ctrl:controller|state.s1                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.376 ; dp:datapath|dd[0]                          ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
-; 0.385 ; ctrl:controller|ADDRESS[3]                 ; ctrl:controller|PC[3]                      ; clk          ; clk         ; 0.000        ; 0.130      ; 0.667      ;
-; 0.386 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
-; 0.392 ; ctrl:controller|estado_atual[1]            ; dp:datapath|alu_in2[3]                     ; clk          ; clk         ; 0.000        ; 0.137      ; 0.681      ;
-; 0.392 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[0]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.544      ;
-; 0.403 ; ctrl:controller|imm[1]                     ; dp:datapath|alu_in1[1]                     ; clk          ; clk         ; 0.000        ; 0.065      ; 0.620      ;
-; 0.403 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.555      ;
-; 0.420 ; ctrl:controller|imm[2]                     ; dp:datapath|dd[0]                          ; clk          ; clk         ; 0.000        ; 0.135      ; 0.707      ;
-; 0.423 ; dp:datapath|rf:registrador|out1[3]         ; dp:datapath|rf:registrador|output[3]       ; clk          ; clk         ; 0.000        ; 0.031      ; 0.606      ;
-; 0.425 ; dp:datapath|rf:registrador|out3[2]         ; dp:datapath|rf:registrador|output[2]       ; clk          ; clk         ; 0.000        ; 0.018      ; 0.595      ;
-; 0.435 ; dp:datapath|alu:alu1|output[1]             ; dp:datapath|acu_in[1]                      ; clk          ; clk         ; 0.000        ; 0.027      ; 0.614      ;
-; 0.437 ; ctrl:controller|OPCODE[0]                  ; ctrl:controller|estado_atual[0]            ; clk          ; clk         ; 0.000        ; 0.001      ; 0.590      ;
-; 0.440 ; ctrl:controller|OPCODE[2]                  ; ctrl:controller|estado_atual[2]            ; clk          ; clk         ; 0.000        ; 0.001      ; 0.593      ;
-; 0.441 ; ctrl:controller|state.s3                   ; ctrl:controller|estado_atual[3]            ; clk          ; clk         ; 0.000        ; -0.001     ; 0.592      ;
-; 0.449 ; ctrl:controller|imm[3]                     ; dp:datapath|alu_in1[3]                     ; clk          ; clk         ; 0.000        ; 0.065      ; 0.666      ;
-; 0.456 ; ctrl:controller|OPCODE[1]                  ; ctrl:controller|estado_atual[1]            ; clk          ; clk         ; 0.000        ; 0.001      ; 0.609      ;
-; 0.457 ; ctrl:controller|state.s0                   ; ctrl:controller|imm[0]                     ; clk          ; clk         ; 0.000        ; 0.082      ; 0.691      ;
-; 0.458 ; ctrl:controller|imm[0]                     ; dp:datapath|alu_in1[0]                     ; clk          ; clk         ; 0.000        ; 0.007      ; 0.617      ;
-; 0.464 ; ctrl:controller|state.s6                   ; ctrl:controller|PC[1]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.745      ;
-; 0.464 ; ctrl:controller|estado_atual[2]            ; dp:datapath|alu_in2[3]                     ; clk          ; clk         ; 0.000        ; 0.137      ; 0.753      ;
-; 0.465 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[7]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.746      ;
-; 0.465 ; ctrl:controller|estado_atual[2]            ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; 0.137      ; 0.754      ;
-; 0.465 ; ctrl:controller|state.s6                   ; ctrl:controller|PC[3]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.746      ;
-; 0.466 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[4]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.747      ;
-; 0.466 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[5]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.747      ;
-; 0.466 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[6]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.747      ;
-; 0.467 ; ctrl:controller|state.s6                   ; ctrl:controller|PC[2]                      ; clk          ; clk         ; 0.000        ; 0.129      ; 0.748      ;
-; 0.471 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[2]~reg0                               ; clk          ; clk         ; 0.000        ; 0.012      ; 0.635      ;
-; 0.472 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[3]~reg0                               ; clk          ; clk         ; 0.000        ; 0.012      ; 0.636      ;
-; 0.472 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[4]~reg0                               ; clk          ; clk         ; 0.000        ; 0.012      ; 0.636      ;
-; 0.475 ; ctrl:controller|estado_atual[1]            ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; 0.137      ; 0.764      ;
-; 0.476 ; dp:datapath|acc:acumulador_atual|output[0] ; dp:datapath|dado[0]                        ; clk          ; clk         ; 0.000        ; 0.012      ; 0.640      ;
-; 0.476 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[0]~reg0                               ; clk          ; clk         ; 0.000        ; 0.012      ; 0.640      ;
-; 0.476 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[1]~reg0                               ; clk          ; clk         ; 0.000        ; 0.012      ; 0.640      ;
-; 0.476 ; dp:datapath|acc:acumulador_atual|output[0] ; hex4[5]~reg0                               ; clk          ; clk         ; 0.000        ; 0.012      ; 0.640      ;
-; 0.480 ; dp:datapath|rf:registrador|output[2]       ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; -0.022     ; 0.610      ;
-; 0.482 ; dp:datapath|rf:registrador|output[3]       ; dp:datapath|alu_in2[3]                     ; clk          ; clk         ; 0.000        ; -0.022     ; 0.612      ;
-; 0.485 ; dp:datapath|alu_in1[1]                     ; dp:datapath|alu:alu1|output[1]             ; clk          ; clk         ; 0.000        ; 0.032      ; 0.669      ;
-; 0.487 ; dp:datapath|dado[3]                        ; dp:datapath|rf:registrador|out3[3]         ; clk          ; clk         ; 0.000        ; -0.009     ; 0.630      ;
-; 0.488 ; dp:datapath|dado[2]                        ; dp:datapath|rf:registrador|out3[2]         ; clk          ; clk         ; 0.000        ; -0.009     ; 0.631      ;
-; 0.492 ; dp:datapath|rf:registrador|output[3]       ; dp:datapath|acu_in[3]                      ; clk          ; clk         ; 0.000        ; -0.011     ; 0.633      ;
-; 0.502 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[0]                      ; clk          ; clk         ; 0.000        ; 0.149      ; 0.803      ;
-; 0.506 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[3]                      ; clk          ; clk         ; 0.000        ; 0.149      ; 0.807      ;
-; 0.507 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[1]                      ; clk          ; clk         ; 0.000        ; 0.149      ; 0.808      ;
-; 0.509 ; dp:datapath|acc:acumulador_atual|output[2] ; dp:datapath|alu_in2[2]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 0.660      ;
-; 0.519 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[10]                     ; clk          ; clk         ; 0.000        ; 0.124      ; 0.795      ;
-; 0.519 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[27]                     ; clk          ; clk         ; 0.000        ; 0.124      ; 0.795      ;
-; 0.520 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[3]             ; clk          ; clk         ; 0.000        ; 0.122      ; 0.794      ;
-; 0.523 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[31]                     ; clk          ; clk         ; 0.000        ; 0.125      ; 0.800      ;
-; 0.524 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[2]             ; clk          ; clk         ; 0.000        ; 0.122      ; 0.798      ;
-; 0.526 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[11]                     ; clk          ; clk         ; 0.000        ; 0.124      ; 0.802      ;
-; 0.526 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[30]                     ; clk          ; clk         ; 0.000        ; 0.124      ; 0.802      ;
-; 0.527 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[24]                     ; clk          ; clk         ; 0.000        ; 0.124      ; 0.803      ;
-; 0.528 ; dp:datapath|acc:acumulador_atual|output[0] ; output[0]~reg0                             ; clk          ; clk         ; 0.000        ; -0.049     ; 0.631      ;
-; 0.530 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[26]                     ; clk          ; clk         ; 0.000        ; 0.124      ; 0.806      ;
-; 0.530 ; dp:datapath|rf:registrador|output[2]       ; dp:datapath|acu_in[2]                      ; clk          ; clk         ; 0.000        ; -0.011     ; 0.671      ;
-; 0.531 ; ctrl:controller|ADDRESS[1]                 ; ctrl:controller|imm[1]                     ; clk          ; clk         ; 0.000        ; 0.025      ; 0.708      ;
-; 0.531 ; dp:datapath|alu:alu1|output[2]             ; dp:datapath|acu_in[2]                      ; clk          ; clk         ; 0.000        ; 0.027      ; 0.710      ;
-; 0.532 ; ctrl:controller|state.s2                   ; ctrl:controller|PC[8]                      ; clk          ; clk         ; 0.000        ; 0.124      ; 0.808      ;
-+-------+--------------------------------------------+--------------------------------------------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                          ;
++-------+--------------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                  ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.101 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[1]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.468      ;
+; 0.133 ; dp:datapath|output_4[0]                    ; hex4[3]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.657      ;
+; 0.134 ; dp:datapath|output_4[0]                    ; hex4[6]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.658      ;
+; 0.137 ; dp:datapath|output_4[0]                    ; output[0]~reg0                       ; clk          ; clk         ; 0.000        ; 0.372      ; 0.661      ;
+; 0.138 ; dp:datapath|output_4[0]                    ; hex4[5]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.662      ;
+; 0.139 ; dp:datapath|output_4[0]                    ; hex4[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.663      ;
+; 0.139 ; dp:datapath|output_4[0]                    ; hex4[1]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.663      ;
+; 0.140 ; dp:datapath|output_4[1]                    ; output[1]~reg0                       ; clk          ; clk         ; 0.000        ; 0.372      ; 0.664      ;
+; 0.142 ; dp:datapath|output_4[0]                    ; hex4[2]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.666      ;
+; 0.142 ; dp:datapath|output_4[0]                    ; hex4[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.666      ;
+; 0.143 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[0]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.510      ;
+; 0.162 ; dp:datapath|alu_in1[0]                     ; dp:datapath|alu:alu1|output[0]       ; clk          ; clk         ; 0.000        ; 0.222      ; 0.536      ;
+; 0.165 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[3]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.532      ;
+; 0.172 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[2]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.539      ;
+; 0.188 ; dp:datapath|output_4[2]                    ; hex4[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.712      ;
+; 0.192 ; dp:datapath|output_4[2]                    ; hex4[2]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.716      ;
+; 0.193 ; dp:datapath|output_4[2]                    ; hex4[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.717      ;
+; 0.194 ; dp:datapath|acc:acumulador_atual|output[3] ; dp:datapath|dado[3]                  ; clk          ; clk         ; 0.000        ; 0.265      ; 0.611      ;
+; 0.194 ; dp:datapath|output_4[2]                    ; hex4[6]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.718      ;
+; 0.194 ; dp:datapath|output_4[2]                    ; hex4[5]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.718      ;
+; 0.195 ; dp:datapath|output_4[2]                    ; hex4[3]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.719      ;
+; 0.204 ; dp:datapath|teste[1]                       ; dp:datapath|enable_alu               ; clk          ; clk         ; 0.000        ; 0.180      ; 0.536      ;
+; 0.215 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s0             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ctrl:controller|state.done                 ; ctrl:controller|state.done           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ctrl:controller|estado_atual[1]            ; ctrl:controller|estado_atual[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ctrl:controller|estado_atual[2]            ; ctrl:controller|estado_atual[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; dp:datapath|enable_acu                     ; dp:datapath|enable_acu               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; dp:datapath|enable_reg                     ; dp:datapath|enable_reg               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; dp:datapath|teste[1]                       ; dp:datapath|teste[1]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; dp:datapath|teste[0]                       ; dp:datapath|teste[0]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; dp:datapath|output_4[3]                    ; output[3]~reg0                       ; clk          ; clk         ; 0.000        ; 0.372      ; 0.739      ;
+; 0.215 ; hex0[0]~reg0                               ; hex0[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.218 ; dp:datapath|output_4[2]                    ; hex4[1]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.742      ;
+; 0.225 ; dp:datapath|output_4[2]                    ; output[2]~reg0                       ; clk          ; clk         ; 0.000        ; 0.372      ; 0.749      ;
+; 0.231 ; dp:datapath|alu_in1[1]                     ; dp:datapath|alu:alu1|output[1]       ; clk          ; clk         ; 0.000        ; 0.222      ; 0.605      ;
+; 0.236 ; ctrl:controller|state.s4                   ; ctrl:controller|state.s5             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.388      ;
+; 0.240 ; dp:datapath|teste[0]                       ; dp:datapath|enable_alu               ; clk          ; clk         ; 0.000        ; 0.180      ; 0.572      ;
+; 0.241 ; dp:datapath|acc:acumulador_atual|output[3] ; dp:datapath|output_4[3]              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.393      ;
+; 0.243 ; dp:datapath|acc:acumulador_atual|output[1] ; dp:datapath|output_4[1]              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
+; 0.245 ; ctrl:controller|state.s1                   ; ctrl:controller|state.s2             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.397      ;
+; 0.245 ; dp:datapath|acc:acumulador_atual|output[2] ; dp:datapath|output_4[2]              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.397      ;
+; 0.247 ; dp:datapath|opcode_sig[2]                  ; dp:datapath|alu:alu1|output[0]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.614      ;
+; 0.248 ; ctrl:controller|state.s0                   ; ctrl:controller|state.s1             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.400      ;
+; 0.249 ; ctrl:controller|state.s6                   ; ctrl:controller|state.done           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.401      ;
+; 0.250 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[2] ; clk          ; clk         ; 0.000        ; 0.048      ; 0.450      ;
+; 0.255 ; dp:datapath|output_4[1]                    ; hex4[3]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.779      ;
+; 0.255 ; dp:datapath|output_4[1]                    ; hex4[6]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.779      ;
+; 0.256 ; dp:datapath|output_4[1]                    ; hex4[5]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.780      ;
+; 0.257 ; dp:datapath|output_4[1]                    ; hex4[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.781      ;
+; 0.257 ; dp:datapath|output_4[1]                    ; hex4[1]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.781      ;
+; 0.258 ; dp:datapath|output_4[1]                    ; hex4[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.782      ;
+; 0.260 ; dp:datapath|alu_in1[3]                     ; dp:datapath|alu:alu1|output[3]       ; clk          ; clk         ; 0.000        ; 0.222      ; 0.634      ;
+; 0.263 ; dp:datapath|output_4[1]                    ; hex4[2]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.787      ;
+; 0.271 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[2]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.638      ;
+; 0.280 ; dp:datapath|acc:acumulador_atual|output[0] ; dp:datapath|dado[0]                  ; clk          ; clk         ; 0.000        ; 0.265      ; 0.697      ;
+; 0.283 ; dp:datapath|alu_in2[0]                     ; dp:datapath|alu:alu1|output[0]       ; clk          ; clk         ; 0.000        ; 0.331      ; 0.766      ;
+; 0.284 ; dp:datapath|acc:acumulador_atual|output[2] ; dp:datapath|dado[2]                  ; clk          ; clk         ; 0.000        ; 0.265      ; 0.701      ;
+; 0.313 ; dp:datapath|dd[0]                          ; dp:datapath|rf:registrador|output[3] ; clk          ; clk         ; 0.000        ; 0.048      ; 0.513      ;
+; 0.327 ; dp:datapath|acc:acumulador_atual|output[0] ; dp:datapath|output_4[0]              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.479      ;
+; 0.329 ; ctrl:controller|state.s2                   ; ctrl:controller|state.s3             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.481      ;
+; 0.329 ; dp:datapath|dd[1]                          ; dp:datapath|rf:registrador|output[0] ; clk          ; clk         ; 0.000        ; 0.048      ; 0.529      ;
+; 0.337 ; dp:datapath|opcode_sig[3]                  ; hex2[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.184      ; 0.673      ;
+; 0.338 ; ctrl:controller|state.s3                   ; ctrl:controller|state.s4             ; clk          ; clk         ; 0.000        ; -0.010     ; 0.480      ;
+; 0.341 ; dp:datapath|output_4[3]                    ; hex4[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.865      ;
+; 0.346 ; dp:datapath|alu_in1[2]                     ; dp:datapath|alu:alu1|output[2]       ; clk          ; clk         ; 0.000        ; 0.222      ; 0.720      ;
+; 0.347 ; dp:datapath|output_4[3]                    ; hex4[1]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.871      ;
+; 0.348 ; dp:datapath|output_4[3]                    ; hex4[5]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.872      ;
+; 0.348 ; dp:datapath|output_4[3]                    ; hex4[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.872      ;
+; 0.349 ; dp:datapath|output_4[3]                    ; hex4[3]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.873      ;
+; 0.349 ; dp:datapath|output_4[3]                    ; hex4[6]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.873      ;
+; 0.350 ; dp:datapath|output_4[3]                    ; hex4[2]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.874      ;
+; 0.351 ; ctrl:controller|PC[1]                      ; ctrl:controller|linha_ctrl[1]        ; clk          ; clk         ; 0.000        ; -0.003     ; 0.500      ;
+; 0.353 ; dp:datapath|rf:registrador|out2[0]         ; dp:datapath|rf:registrador|output[0] ; clk          ; clk         ; 0.000        ; 0.014      ; 0.519      ;
+; 0.357 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[3]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.724      ;
+; 0.360 ; dp:datapath|teste[0]                       ; dp:datapath|teste[1]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.361 ; dp:datapath|opcode_sig[3]                  ; dp:datapath|alu:alu1|output[1]       ; clk          ; clk         ; 0.000        ; 0.215      ; 0.728      ;
+; 0.370 ; ctrl:controller|estado_atual[3]            ; dp:datapath|enable_reg               ; clk          ; clk         ; 0.000        ; 0.010      ; 0.532      ;
+; 0.371 ; dp:datapath|teste[1]                       ; dp:datapath|teste[0]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; dp:datapath|opcode_sig[2]                  ; hex2[0]~reg0                         ; clk          ; clk         ; 0.000        ; 0.184      ; 0.707      ;
+; 0.372 ; ctrl:controller|estado_atual[3]            ; dp:datapath|acu_in[3]                ; clk          ; clk         ; 0.000        ; 0.095      ; 0.619      ;
+; 0.382 ; ctrl:controller|imm[1]                     ; dp:datapath|imm_sig[1]               ; clk          ; clk         ; 0.000        ; -0.001     ; 0.533      ;
+; 0.382 ; dp:datapath|output_4[0]                    ; hex5[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.906      ;
+; 0.383 ; ctrl:controller|state.s6                   ; ctrl:controller|state.s1             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.535      ;
+; 0.391 ; ctrl:controller|imm[0]                     ; dp:datapath|imm_sig[0]               ; clk          ; clk         ; 0.000        ; -0.001     ; 0.542      ;
+; 0.424 ; dp:datapath|rf:registrador|output[1]       ; dp:datapath|acu_in[1]                ; clk          ; clk         ; 0.000        ; -0.096     ; 0.480      ;
+; 0.424 ; dp:datapath|rf:registrador|out1[3]         ; dp:datapath|rf:registrador|output[3] ; clk          ; clk         ; 0.000        ; -0.012     ; 0.564      ;
+; 0.427 ; dp:datapath|rf:registrador|out3[2]         ; dp:datapath|rf:registrador|output[2] ; clk          ; clk         ; 0.000        ; -0.012     ; 0.567      ;
+; 0.428 ; dp:datapath|rf:registrador|out3[0]         ; dp:datapath|rf:registrador|output[0] ; clk          ; clk         ; 0.000        ; -0.012     ; 0.568      ;
+; 0.432 ; ctrl:controller|state.s5                   ; ctrl:controller|state.s6             ; clk          ; clk         ; 0.000        ; 0.010      ; 0.594      ;
+; 0.434 ; dp:datapath|rf:registrador|out2[2]         ; dp:datapath|rf:registrador|output[2] ; clk          ; clk         ; 0.000        ; 0.014      ; 0.600      ;
+; 0.440 ; dp:datapath|dado[3]                        ; dp:datapath|rf:registrador|out1[3]   ; clk          ; clk         ; 0.000        ; 0.012      ; 0.604      ;
+; 0.440 ; dp:datapath|dado[3]                        ; dp:datapath|rf:registrador|out3[3]   ; clk          ; clk         ; 0.000        ; 0.012      ; 0.604      ;
+; 0.444 ; dp:datapath|dado[2]                        ; dp:datapath|rf:registrador|out3[2]   ; clk          ; clk         ; 0.000        ; 0.012      ; 0.608      ;
+; 0.445 ; dp:datapath|dado[2]                        ; dp:datapath|rf:registrador|out1[2]   ; clk          ; clk         ; 0.000        ; 0.012      ; 0.609      ;
+; 0.457 ; dp:datapath|output_4[3]                    ; hex5[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.981      ;
+; 0.465 ; dp:datapath|acc:acumulador_atual|output[2] ; dp:datapath|alu_in2[2]               ; clk          ; clk         ; 0.000        ; -0.031     ; 0.586      ;
+; 0.475 ; dp:datapath|output_4[2]                    ; hex5[4]~reg0                         ; clk          ; clk         ; 0.000        ; 0.372      ; 0.999      ;
+; 0.476 ; ctrl:controller|PC[3]                      ; ctrl:controller|OPCODE[1]            ; clk          ; clk         ; 0.000        ; -0.013     ; 0.615      ;
+; 0.478 ; dp:datapath|rf:registrador|output[3]       ; dp:datapath|acu_in[3]                ; clk          ; clk         ; 0.000        ; -0.096     ; 0.534      ;
+; 0.479 ; ctrl:controller|PC[3]                      ; ctrl:controller|OPCODE[0]            ; clk          ; clk         ; 0.000        ; -0.013     ; 0.618      ;
++-------+--------------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -933,9 +969,9 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|imm[2]          ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|imm[3]          ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|imm[3]          ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|state.done      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|state.done      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|state.s0        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|linha_ctrl[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; ctrl:controller|linha_ctrl[0]   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; ctrl:controller|linha_ctrl[1]   ;
 +--------+--------------+----------------+------------------+-------+------------+---------------------------------+
 
 
@@ -944,8 +980,8 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; rst       ; clk        ; 0.686 ; 0.686 ; Fall       ; clk             ;
-; start     ; clk        ; 3.350 ; 3.350 ; Fall       ; clk             ;
+; rst       ; clk        ; 0.628 ; 0.628 ; Fall       ; clk             ;
+; start     ; clk        ; 3.243 ; 3.243 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -954,8 +990,8 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; rst       ; clk        ; 0.148  ; 0.148  ; Fall       ; clk             ;
-; start     ; clk        ; -3.102 ; -3.102 ; Fall       ; clk             ;
+; rst       ; clk        ; 0.271  ; 0.271  ; Fall       ; clk             ;
+; start     ; clk        ; -3.002 ; -3.002 ; Fall       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -964,39 +1000,57 @@ No paths to report.
 +------------+------------+-------+-------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------+------------+-------+-------+------------+-----------------+
-; hex0[*]    ; clk        ; 4.746 ; 4.746 ; Fall       ; clk             ;
-;  hex0[0]   ; clk        ; 4.746 ; 4.746 ; Fall       ; clk             ;
-;  hex0[3]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex0[4]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex0[5]   ; clk        ; 4.596 ; 4.596 ; Fall       ; clk             ;
-; hex1[*]    ; clk        ; 4.215 ; 4.215 ; Fall       ; clk             ;
-;  hex1[0]   ; clk        ; 4.215 ; 4.215 ; Fall       ; clk             ;
-;  hex1[3]   ; clk        ; 4.098 ; 4.098 ; Fall       ; clk             ;
-;  hex1[4]   ; clk        ; 4.118 ; 4.118 ; Fall       ; clk             ;
-;  hex1[5]   ; clk        ; 3.954 ; 3.954 ; Fall       ; clk             ;
-; hex2[*]    ; clk        ; 4.001 ; 4.001 ; Fall       ; clk             ;
-;  hex2[0]   ; clk        ; 3.986 ; 3.986 ; Fall       ; clk             ;
-;  hex2[3]   ; clk        ; 4.001 ; 4.001 ; Fall       ; clk             ;
-;  hex2[4]   ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-;  hex2[5]   ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-; hex3[*]    ; clk        ; 3.984 ; 3.984 ; Fall       ; clk             ;
-;  hex3[0]   ; clk        ; 3.984 ; 3.984 ; Fall       ; clk             ;
-;  hex3[3]   ; clk        ; 3.965 ; 3.965 ; Fall       ; clk             ;
-;  hex3[4]   ; clk        ; 3.965 ; 3.965 ; Fall       ; clk             ;
-;  hex3[5]   ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
-; hex4[*]    ; clk        ; 5.706 ; 5.706 ; Fall       ; clk             ;
-;  hex4[0]   ; clk        ; 4.700 ; 4.700 ; Fall       ; clk             ;
-;  hex4[1]   ; clk        ; 4.513 ; 4.513 ; Fall       ; clk             ;
-;  hex4[2]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex4[3]   ; clk        ; 5.706 ; 5.706 ; Fall       ; clk             ;
-;  hex4[4]   ; clk        ; 4.539 ; 4.539 ; Fall       ; clk             ;
-;  hex4[5]   ; clk        ; 4.798 ; 4.798 ; Fall       ; clk             ;
-;  hex4[6]   ; clk        ; 4.635 ; 4.635 ; Fall       ; clk             ;
-; output[*]  ; clk        ; 3.252 ; 3.252 ; Fall       ; clk             ;
-;  output[0] ; clk        ; 3.201 ; 3.201 ; Fall       ; clk             ;
-;  output[1] ; clk        ; 3.192 ; 3.192 ; Fall       ; clk             ;
-;  output[2] ; clk        ; 3.252 ; 3.252 ; Fall       ; clk             ;
-;  output[3] ; clk        ; 3.178 ; 3.178 ; Fall       ; clk             ;
+; hex0[*]    ; clk        ; 4.969 ; 4.969 ; Fall       ; clk             ;
+;  hex0[0]   ; clk        ; 4.969 ; 4.969 ; Fall       ; clk             ;
+;  hex0[3]   ; clk        ; 4.947 ; 4.947 ; Fall       ; clk             ;
+;  hex0[4]   ; clk        ; 4.947 ; 4.947 ; Fall       ; clk             ;
+;  hex0[5]   ; clk        ; 4.825 ; 4.825 ; Fall       ; clk             ;
+; hex1[*]    ; clk        ; 4.542 ; 4.542 ; Fall       ; clk             ;
+;  hex1[0]   ; clk        ; 4.542 ; 4.542 ; Fall       ; clk             ;
+;  hex1[3]   ; clk        ; 4.407 ; 4.407 ; Fall       ; clk             ;
+;  hex1[4]   ; clk        ; 4.427 ; 4.427 ; Fall       ; clk             ;
+;  hex1[5]   ; clk        ; 4.408 ; 4.408 ; Fall       ; clk             ;
+; hex2[*]    ; clk        ; 4.525 ; 4.525 ; Fall       ; clk             ;
+;  hex2[0]   ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  hex2[3]   ; clk        ; 4.525 ; 4.525 ; Fall       ; clk             ;
+;  hex2[4]   ; clk        ; 4.495 ; 4.495 ; Fall       ; clk             ;
+;  hex2[5]   ; clk        ; 4.495 ; 4.495 ; Fall       ; clk             ;
+; hex3[*]    ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[0]   ; clk        ; 4.279 ; 4.279 ; Fall       ; clk             ;
+;  hex3[3]   ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[4]   ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[5]   ; clk        ; 4.129 ; 4.129 ; Fall       ; clk             ;
+; hex4[*]    ; clk        ; 5.694 ; 5.694 ; Fall       ; clk             ;
+;  hex4[0]   ; clk        ; 4.923 ; 4.923 ; Fall       ; clk             ;
+;  hex4[1]   ; clk        ; 5.694 ; 5.694 ; Fall       ; clk             ;
+;  hex4[2]   ; clk        ; 4.964 ; 4.964 ; Fall       ; clk             ;
+;  hex4[3]   ; clk        ; 4.811 ; 4.811 ; Fall       ; clk             ;
+;  hex4[4]   ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex4[5]   ; clk        ; 5.597 ; 5.597 ; Fall       ; clk             ;
+;  hex4[6]   ; clk        ; 5.505 ; 5.505 ; Fall       ; clk             ;
+; hex5[*]    ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex5[0]   ; clk        ; 4.306 ; 4.306 ; Fall       ; clk             ;
+;  hex5[3]   ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex5[4]   ; clk        ; 4.766 ; 4.766 ; Fall       ; clk             ;
+;  hex5[5]   ; clk        ; 4.411 ; 4.411 ; Fall       ; clk             ;
+; hex6[*]    ; clk        ; 5.409 ; 5.409 ; Fall       ; clk             ;
+;  hex6[0]   ; clk        ; 4.776 ; 4.776 ; Fall       ; clk             ;
+;  hex6[1]   ; clk        ; 5.409 ; 5.409 ; Fall       ; clk             ;
+;  hex6[2]   ; clk        ; 4.376 ; 4.376 ; Fall       ; clk             ;
+;  hex6[3]   ; clk        ; 4.833 ; 4.833 ; Fall       ; clk             ;
+;  hex6[4]   ; clk        ; 4.816 ; 4.816 ; Fall       ; clk             ;
+;  hex6[5]   ; clk        ; 4.111 ; 4.111 ; Fall       ; clk             ;
+;  hex6[6]   ; clk        ; 4.031 ; 4.031 ; Fall       ; clk             ;
+; hex7[*]    ; clk        ; 4.682 ; 4.682 ; Fall       ; clk             ;
+;  hex7[0]   ; clk        ; 4.170 ; 4.170 ; Fall       ; clk             ;
+;  hex7[3]   ; clk        ; 4.237 ; 4.237 ; Fall       ; clk             ;
+;  hex7[4]   ; clk        ; 4.682 ; 4.682 ; Fall       ; clk             ;
+;  hex7[5]   ; clk        ; 4.368 ; 4.368 ; Fall       ; clk             ;
+; output[*]  ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  output[0] ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  output[1] ; clk        ; 4.469 ; 4.469 ; Fall       ; clk             ;
+;  output[2] ; clk        ; 4.443 ; 4.443 ; Fall       ; clk             ;
+;  output[3] ; clk        ; 4.435 ; 4.435 ; Fall       ; clk             ;
 +------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1005,39 +1059,57 @@ No paths to report.
 +------------+------------+-------+-------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------+------------+-------+-------+------------+-----------------+
-; hex0[*]    ; clk        ; 4.596 ; 4.596 ; Fall       ; clk             ;
-;  hex0[0]   ; clk        ; 4.746 ; 4.746 ; Fall       ; clk             ;
-;  hex0[3]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex0[4]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex0[5]   ; clk        ; 4.596 ; 4.596 ; Fall       ; clk             ;
-; hex1[*]    ; clk        ; 3.954 ; 3.954 ; Fall       ; clk             ;
-;  hex1[0]   ; clk        ; 4.215 ; 4.215 ; Fall       ; clk             ;
-;  hex1[3]   ; clk        ; 4.098 ; 4.098 ; Fall       ; clk             ;
-;  hex1[4]   ; clk        ; 4.118 ; 4.118 ; Fall       ; clk             ;
-;  hex1[5]   ; clk        ; 3.954 ; 3.954 ; Fall       ; clk             ;
-; hex2[*]    ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-;  hex2[0]   ; clk        ; 3.986 ; 3.986 ; Fall       ; clk             ;
-;  hex2[3]   ; clk        ; 4.001 ; 4.001 ; Fall       ; clk             ;
-;  hex2[4]   ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-;  hex2[5]   ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-; hex3[*]    ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
-;  hex3[0]   ; clk        ; 3.984 ; 3.984 ; Fall       ; clk             ;
-;  hex3[3]   ; clk        ; 3.965 ; 3.965 ; Fall       ; clk             ;
-;  hex3[4]   ; clk        ; 3.965 ; 3.965 ; Fall       ; clk             ;
-;  hex3[5]   ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
-; hex4[*]    ; clk        ; 4.513 ; 4.513 ; Fall       ; clk             ;
-;  hex4[0]   ; clk        ; 4.700 ; 4.700 ; Fall       ; clk             ;
-;  hex4[1]   ; clk        ; 4.513 ; 4.513 ; Fall       ; clk             ;
-;  hex4[2]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex4[3]   ; clk        ; 5.706 ; 5.706 ; Fall       ; clk             ;
-;  hex4[4]   ; clk        ; 4.539 ; 4.539 ; Fall       ; clk             ;
-;  hex4[5]   ; clk        ; 4.798 ; 4.798 ; Fall       ; clk             ;
-;  hex4[6]   ; clk        ; 4.635 ; 4.635 ; Fall       ; clk             ;
-; output[*]  ; clk        ; 3.178 ; 3.178 ; Fall       ; clk             ;
-;  output[0] ; clk        ; 3.201 ; 3.201 ; Fall       ; clk             ;
-;  output[1] ; clk        ; 3.192 ; 3.192 ; Fall       ; clk             ;
-;  output[2] ; clk        ; 3.252 ; 3.252 ; Fall       ; clk             ;
-;  output[3] ; clk        ; 3.178 ; 3.178 ; Fall       ; clk             ;
+; hex0[*]    ; clk        ; 4.825 ; 4.825 ; Fall       ; clk             ;
+;  hex0[0]   ; clk        ; 4.969 ; 4.969 ; Fall       ; clk             ;
+;  hex0[3]   ; clk        ; 4.947 ; 4.947 ; Fall       ; clk             ;
+;  hex0[4]   ; clk        ; 4.947 ; 4.947 ; Fall       ; clk             ;
+;  hex0[5]   ; clk        ; 4.825 ; 4.825 ; Fall       ; clk             ;
+; hex1[*]    ; clk        ; 4.407 ; 4.407 ; Fall       ; clk             ;
+;  hex1[0]   ; clk        ; 4.542 ; 4.542 ; Fall       ; clk             ;
+;  hex1[3]   ; clk        ; 4.407 ; 4.407 ; Fall       ; clk             ;
+;  hex1[4]   ; clk        ; 4.427 ; 4.427 ; Fall       ; clk             ;
+;  hex1[5]   ; clk        ; 4.408 ; 4.408 ; Fall       ; clk             ;
+; hex2[*]    ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  hex2[0]   ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  hex2[3]   ; clk        ; 4.525 ; 4.525 ; Fall       ; clk             ;
+;  hex2[4]   ; clk        ; 4.495 ; 4.495 ; Fall       ; clk             ;
+;  hex2[5]   ; clk        ; 4.495 ; 4.495 ; Fall       ; clk             ;
+; hex3[*]    ; clk        ; 4.129 ; 4.129 ; Fall       ; clk             ;
+;  hex3[0]   ; clk        ; 4.279 ; 4.279 ; Fall       ; clk             ;
+;  hex3[3]   ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[4]   ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[5]   ; clk        ; 4.129 ; 4.129 ; Fall       ; clk             ;
+; hex4[*]    ; clk        ; 4.811 ; 4.811 ; Fall       ; clk             ;
+;  hex4[0]   ; clk        ; 4.923 ; 4.923 ; Fall       ; clk             ;
+;  hex4[1]   ; clk        ; 5.694 ; 5.694 ; Fall       ; clk             ;
+;  hex4[2]   ; clk        ; 4.964 ; 4.964 ; Fall       ; clk             ;
+;  hex4[3]   ; clk        ; 4.811 ; 4.811 ; Fall       ; clk             ;
+;  hex4[4]   ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex4[5]   ; clk        ; 5.597 ; 5.597 ; Fall       ; clk             ;
+;  hex4[6]   ; clk        ; 5.505 ; 5.505 ; Fall       ; clk             ;
+; hex5[*]    ; clk        ; 4.306 ; 4.306 ; Fall       ; clk             ;
+;  hex5[0]   ; clk        ; 4.306 ; 4.306 ; Fall       ; clk             ;
+;  hex5[3]   ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex5[4]   ; clk        ; 4.766 ; 4.766 ; Fall       ; clk             ;
+;  hex5[5]   ; clk        ; 4.411 ; 4.411 ; Fall       ; clk             ;
+; hex6[*]    ; clk        ; 4.031 ; 4.031 ; Fall       ; clk             ;
+;  hex6[0]   ; clk        ; 4.776 ; 4.776 ; Fall       ; clk             ;
+;  hex6[1]   ; clk        ; 5.409 ; 5.409 ; Fall       ; clk             ;
+;  hex6[2]   ; clk        ; 4.376 ; 4.376 ; Fall       ; clk             ;
+;  hex6[3]   ; clk        ; 4.833 ; 4.833 ; Fall       ; clk             ;
+;  hex6[4]   ; clk        ; 4.816 ; 4.816 ; Fall       ; clk             ;
+;  hex6[5]   ; clk        ; 4.111 ; 4.111 ; Fall       ; clk             ;
+;  hex6[6]   ; clk        ; 4.031 ; 4.031 ; Fall       ; clk             ;
+; hex7[*]    ; clk        ; 4.170 ; 4.170 ; Fall       ; clk             ;
+;  hex7[0]   ; clk        ; 4.170 ; 4.170 ; Fall       ; clk             ;
+;  hex7[3]   ; clk        ; 4.237 ; 4.237 ; Fall       ; clk             ;
+;  hex7[4]   ; clk        ; 4.682 ; 4.682 ; Fall       ; clk             ;
+;  hex7[5]   ; clk        ; 4.368 ; 4.368 ; Fall       ; clk             ;
+; output[*]  ; clk        ; 4.435 ; 4.435 ; Fall       ; clk             ;
+;  output[0] ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  output[1] ; clk        ; 4.469 ; 4.469 ; Fall       ; clk             ;
+;  output[2] ; clk        ; 4.443 ; 4.443 ; Fall       ; clk             ;
+;  output[3] ; clk        ; 4.435 ; 4.435 ; Fall       ; clk             ;
 +------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1046,10 +1118,10 @@ No paths to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.552   ; 0.209 ; N/A      ; N/A     ; -1.222              ;
-;  clk             ; -3.552   ; 0.209 ; N/A      ; N/A     ; -1.222              ;
-; Design-wide TNS  ; -207.668 ; 0.0   ; 0.0      ; 0.0     ; -131.222            ;
-;  clk             ; -207.668 ; 0.000 ; N/A      ; N/A     ; -131.222            ;
+; Worst-case Slack ; -3.502   ; 0.101 ; N/A      ; N/A     ; -1.222              ;
+;  clk             ; -3.502   ; 0.101 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; -222.109 ; 0.0   ; 0.0      ; 0.0     ; -154.222            ;
+;  clk             ; -222.109 ; 0.000 ; N/A      ; N/A     ; -154.222            ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -1058,8 +1130,8 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; rst       ; clk        ; 1.678 ; 1.678 ; Fall       ; clk             ;
-; start     ; clk        ; 5.889 ; 5.889 ; Fall       ; clk             ;
+; rst       ; clk        ; 1.494 ; 1.494 ; Fall       ; clk             ;
+; start     ; clk        ; 5.681 ; 5.681 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1068,8 +1140,8 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; rst       ; clk        ; 0.148  ; 0.148  ; Fall       ; clk             ;
-; start     ; clk        ; -3.102 ; -3.102 ; Fall       ; clk             ;
+; rst       ; clk        ; 0.329  ; 0.329  ; Fall       ; clk             ;
+; start     ; clk        ; -3.002 ; -3.002 ; Fall       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1078,39 +1150,57 @@ No paths to report.
 +------------+------------+--------+--------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------+------------+--------+--------+------------+-----------------+
-; hex0[*]    ; clk        ; 8.965  ; 8.965  ; Fall       ; clk             ;
-;  hex0[0]   ; clk        ; 8.965  ; 8.965  ; Fall       ; clk             ;
-;  hex0[3]   ; clk        ; 8.937  ; 8.937  ; Fall       ; clk             ;
-;  hex0[4]   ; clk        ; 8.937  ; 8.937  ; Fall       ; clk             ;
-;  hex0[5]   ; clk        ; 8.667  ; 8.667  ; Fall       ; clk             ;
-; hex1[*]    ; clk        ; 8.024  ; 8.024  ; Fall       ; clk             ;
-;  hex1[0]   ; clk        ; 8.024  ; 8.024  ; Fall       ; clk             ;
-;  hex1[3]   ; clk        ; 7.896  ; 7.896  ; Fall       ; clk             ;
-;  hex1[4]   ; clk        ; 7.916  ; 7.916  ; Fall       ; clk             ;
-;  hex1[5]   ; clk        ; 7.561  ; 7.561  ; Fall       ; clk             ;
-; hex2[*]    ; clk        ; 7.615  ; 7.615  ; Fall       ; clk             ;
-;  hex2[0]   ; clk        ; 7.601  ; 7.601  ; Fall       ; clk             ;
-;  hex2[3]   ; clk        ; 7.615  ; 7.615  ; Fall       ; clk             ;
-;  hex2[4]   ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-;  hex2[5]   ; clk        ; 7.585  ; 7.585  ; Fall       ; clk             ;
-; hex3[*]    ; clk        ; 7.635  ; 7.635  ; Fall       ; clk             ;
-;  hex3[0]   ; clk        ; 7.635  ; 7.635  ; Fall       ; clk             ;
-;  hex3[3]   ; clk        ; 7.584  ; 7.584  ; Fall       ; clk             ;
-;  hex3[4]   ; clk        ; 7.584  ; 7.584  ; Fall       ; clk             ;
-;  hex3[5]   ; clk        ; 7.259  ; 7.259  ; Fall       ; clk             ;
-; hex4[*]    ; clk        ; 10.951 ; 10.951 ; Fall       ; clk             ;
-;  hex4[0]   ; clk        ; 9.044  ; 9.044  ; Fall       ; clk             ;
-;  hex4[1]   ; clk        ; 8.480  ; 8.480  ; Fall       ; clk             ;
-;  hex4[2]   ; clk        ; 9.069  ; 9.069  ; Fall       ; clk             ;
-;  hex4[3]   ; clk        ; 10.951 ; 10.951 ; Fall       ; clk             ;
-;  hex4[4]   ; clk        ; 8.602  ; 8.602  ; Fall       ; clk             ;
-;  hex4[5]   ; clk        ; 9.166  ; 9.166  ; Fall       ; clk             ;
-;  hex4[6]   ; clk        ; 8.829  ; 8.829  ; Fall       ; clk             ;
-; output[*]  ; clk        ; 6.033  ; 6.033  ; Fall       ; clk             ;
-;  output[0] ; clk        ; 5.980  ; 5.980  ; Fall       ; clk             ;
-;  output[1] ; clk        ; 5.972  ; 5.972  ; Fall       ; clk             ;
-;  output[2] ; clk        ; 6.033  ; 6.033  ; Fall       ; clk             ;
-;  output[3] ; clk        ; 5.940  ; 5.940  ; Fall       ; clk             ;
+; hex0[*]    ; clk        ; 9.471  ; 9.471  ; Fall       ; clk             ;
+;  hex0[0]   ; clk        ; 9.471  ; 9.471  ; Fall       ; clk             ;
+;  hex0[3]   ; clk        ; 9.447  ; 9.447  ; Fall       ; clk             ;
+;  hex0[4]   ; clk        ; 9.447  ; 9.447  ; Fall       ; clk             ;
+;  hex0[5]   ; clk        ; 9.204  ; 9.204  ; Fall       ; clk             ;
+; hex1[*]    ; clk        ; 8.709  ; 8.709  ; Fall       ; clk             ;
+;  hex1[0]   ; clk        ; 8.709  ; 8.709  ; Fall       ; clk             ;
+;  hex1[3]   ; clk        ; 8.537  ; 8.537  ; Fall       ; clk             ;
+;  hex1[4]   ; clk        ; 8.557  ; 8.557  ; Fall       ; clk             ;
+;  hex1[5]   ; clk        ; 8.536  ; 8.536  ; Fall       ; clk             ;
+; hex2[*]    ; clk        ; 8.676  ; 8.676  ; Fall       ; clk             ;
+;  hex2[0]   ; clk        ; 8.626  ; 8.626  ; Fall       ; clk             ;
+;  hex2[3]   ; clk        ; 8.676  ; 8.676  ; Fall       ; clk             ;
+;  hex2[4]   ; clk        ; 8.645  ; 8.645  ; Fall       ; clk             ;
+;  hex2[5]   ; clk        ; 8.645  ; 8.645  ; Fall       ; clk             ;
+; hex3[*]    ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[0]   ; clk        ; 8.252  ; 8.252  ; Fall       ; clk             ;
+;  hex3[3]   ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[4]   ; clk        ; 8.257  ; 8.257  ; Fall       ; clk             ;
+;  hex3[5]   ; clk        ; 7.941  ; 7.941  ; Fall       ; clk             ;
+; hex4[*]    ; clk        ; 11.019 ; 11.019 ; Fall       ; clk             ;
+;  hex4[0]   ; clk        ; 9.451  ; 9.451  ; Fall       ; clk             ;
+;  hex4[1]   ; clk        ; 11.019 ; 11.019 ; Fall       ; clk             ;
+;  hex4[2]   ; clk        ; 9.598  ; 9.598  ; Fall       ; clk             ;
+;  hex4[3]   ; clk        ; 9.177  ; 9.177  ; Fall       ; clk             ;
+;  hex4[4]   ; clk        ; 9.605  ; 9.605  ; Fall       ; clk             ;
+;  hex4[5]   ; clk        ; 10.849 ; 10.849 ; Fall       ; clk             ;
+;  hex4[6]   ; clk        ; 10.549 ; 10.549 ; Fall       ; clk             ;
+; hex5[*]    ; clk        ; 9.677  ; 9.677  ; Fall       ; clk             ;
+;  hex5[0]   ; clk        ; 8.073  ; 8.073  ; Fall       ; clk             ;
+;  hex5[3]   ; clk        ; 9.677  ; 9.677  ; Fall       ; clk             ;
+;  hex5[4]   ; clk        ; 9.167  ; 9.167  ; Fall       ; clk             ;
+;  hex5[5]   ; clk        ; 8.390  ; 8.390  ; Fall       ; clk             ;
+; hex6[*]    ; clk        ; 10.238 ; 10.238 ; Fall       ; clk             ;
+;  hex6[0]   ; clk        ; 9.125  ; 9.125  ; Fall       ; clk             ;
+;  hex6[1]   ; clk        ; 10.238 ; 10.238 ; Fall       ; clk             ;
+;  hex6[2]   ; clk        ; 8.261  ; 8.261  ; Fall       ; clk             ;
+;  hex6[3]   ; clk        ; 9.125  ; 9.125  ; Fall       ; clk             ;
+;  hex6[4]   ; clk        ; 9.098  ; 9.098  ; Fall       ; clk             ;
+;  hex6[5]   ; clk        ; 7.768  ; 7.768  ; Fall       ; clk             ;
+;  hex6[6]   ; clk        ; 7.577  ; 7.577  ; Fall       ; clk             ;
+; hex7[*]    ; clk        ; 8.818  ; 8.818  ; Fall       ; clk             ;
+;  hex7[0]   ; clk        ; 7.868  ; 7.868  ; Fall       ; clk             ;
+;  hex7[3]   ; clk        ; 8.053  ; 8.053  ; Fall       ; clk             ;
+;  hex7[4]   ; clk        ; 8.818  ; 8.818  ; Fall       ; clk             ;
+;  hex7[5]   ; clk        ; 8.299  ; 8.299  ; Fall       ; clk             ;
+; output[*]  ; clk        ; 8.540  ; 8.540  ; Fall       ; clk             ;
+;  output[0] ; clk        ; 8.540  ; 8.540  ; Fall       ; clk             ;
+;  output[1] ; clk        ; 8.506  ; 8.506  ; Fall       ; clk             ;
+;  output[2] ; clk        ; 8.492  ; 8.492  ; Fall       ; clk             ;
+;  output[3] ; clk        ; 8.474  ; 8.474  ; Fall       ; clk             ;
 +------------+------------+--------+--------+------------+-----------------+
 
 
@@ -1119,39 +1209,57 @@ No paths to report.
 +------------+------------+-------+-------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------+------------+-------+-------+------------+-----------------+
-; hex0[*]    ; clk        ; 4.596 ; 4.596 ; Fall       ; clk             ;
-;  hex0[0]   ; clk        ; 4.746 ; 4.746 ; Fall       ; clk             ;
-;  hex0[3]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex0[4]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex0[5]   ; clk        ; 4.596 ; 4.596 ; Fall       ; clk             ;
-; hex1[*]    ; clk        ; 3.954 ; 3.954 ; Fall       ; clk             ;
-;  hex1[0]   ; clk        ; 4.215 ; 4.215 ; Fall       ; clk             ;
-;  hex1[3]   ; clk        ; 4.098 ; 4.098 ; Fall       ; clk             ;
-;  hex1[4]   ; clk        ; 4.118 ; 4.118 ; Fall       ; clk             ;
-;  hex1[5]   ; clk        ; 3.954 ; 3.954 ; Fall       ; clk             ;
-; hex2[*]    ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-;  hex2[0]   ; clk        ; 3.986 ; 3.986 ; Fall       ; clk             ;
-;  hex2[3]   ; clk        ; 4.001 ; 4.001 ; Fall       ; clk             ;
-;  hex2[4]   ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-;  hex2[5]   ; clk        ; 3.972 ; 3.972 ; Fall       ; clk             ;
-; hex3[*]    ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
-;  hex3[0]   ; clk        ; 3.984 ; 3.984 ; Fall       ; clk             ;
-;  hex3[3]   ; clk        ; 3.965 ; 3.965 ; Fall       ; clk             ;
-;  hex3[4]   ; clk        ; 3.965 ; 3.965 ; Fall       ; clk             ;
-;  hex3[5]   ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
-; hex4[*]    ; clk        ; 4.513 ; 4.513 ; Fall       ; clk             ;
-;  hex4[0]   ; clk        ; 4.700 ; 4.700 ; Fall       ; clk             ;
-;  hex4[1]   ; clk        ; 4.513 ; 4.513 ; Fall       ; clk             ;
-;  hex4[2]   ; clk        ; 4.723 ; 4.723 ; Fall       ; clk             ;
-;  hex4[3]   ; clk        ; 5.706 ; 5.706 ; Fall       ; clk             ;
-;  hex4[4]   ; clk        ; 4.539 ; 4.539 ; Fall       ; clk             ;
-;  hex4[5]   ; clk        ; 4.798 ; 4.798 ; Fall       ; clk             ;
-;  hex4[6]   ; clk        ; 4.635 ; 4.635 ; Fall       ; clk             ;
-; output[*]  ; clk        ; 3.178 ; 3.178 ; Fall       ; clk             ;
-;  output[0] ; clk        ; 3.201 ; 3.201 ; Fall       ; clk             ;
-;  output[1] ; clk        ; 3.192 ; 3.192 ; Fall       ; clk             ;
-;  output[2] ; clk        ; 3.252 ; 3.252 ; Fall       ; clk             ;
-;  output[3] ; clk        ; 3.178 ; 3.178 ; Fall       ; clk             ;
+; hex0[*]    ; clk        ; 4.825 ; 4.825 ; Fall       ; clk             ;
+;  hex0[0]   ; clk        ; 4.969 ; 4.969 ; Fall       ; clk             ;
+;  hex0[3]   ; clk        ; 4.947 ; 4.947 ; Fall       ; clk             ;
+;  hex0[4]   ; clk        ; 4.947 ; 4.947 ; Fall       ; clk             ;
+;  hex0[5]   ; clk        ; 4.825 ; 4.825 ; Fall       ; clk             ;
+; hex1[*]    ; clk        ; 4.407 ; 4.407 ; Fall       ; clk             ;
+;  hex1[0]   ; clk        ; 4.542 ; 4.542 ; Fall       ; clk             ;
+;  hex1[3]   ; clk        ; 4.407 ; 4.407 ; Fall       ; clk             ;
+;  hex1[4]   ; clk        ; 4.427 ; 4.427 ; Fall       ; clk             ;
+;  hex1[5]   ; clk        ; 4.408 ; 4.408 ; Fall       ; clk             ;
+; hex2[*]    ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  hex2[0]   ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  hex2[3]   ; clk        ; 4.525 ; 4.525 ; Fall       ; clk             ;
+;  hex2[4]   ; clk        ; 4.495 ; 4.495 ; Fall       ; clk             ;
+;  hex2[5]   ; clk        ; 4.495 ; 4.495 ; Fall       ; clk             ;
+; hex3[*]    ; clk        ; 4.129 ; 4.129 ; Fall       ; clk             ;
+;  hex3[0]   ; clk        ; 4.279 ; 4.279 ; Fall       ; clk             ;
+;  hex3[3]   ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[4]   ; clk        ; 4.287 ; 4.287 ; Fall       ; clk             ;
+;  hex3[5]   ; clk        ; 4.129 ; 4.129 ; Fall       ; clk             ;
+; hex4[*]    ; clk        ; 4.811 ; 4.811 ; Fall       ; clk             ;
+;  hex4[0]   ; clk        ; 4.923 ; 4.923 ; Fall       ; clk             ;
+;  hex4[1]   ; clk        ; 5.694 ; 5.694 ; Fall       ; clk             ;
+;  hex4[2]   ; clk        ; 4.964 ; 4.964 ; Fall       ; clk             ;
+;  hex4[3]   ; clk        ; 4.811 ; 4.811 ; Fall       ; clk             ;
+;  hex4[4]   ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex4[5]   ; clk        ; 5.597 ; 5.597 ; Fall       ; clk             ;
+;  hex4[6]   ; clk        ; 5.505 ; 5.505 ; Fall       ; clk             ;
+; hex5[*]    ; clk        ; 4.306 ; 4.306 ; Fall       ; clk             ;
+;  hex5[0]   ; clk        ; 4.306 ; 4.306 ; Fall       ; clk             ;
+;  hex5[3]   ; clk        ; 4.968 ; 4.968 ; Fall       ; clk             ;
+;  hex5[4]   ; clk        ; 4.766 ; 4.766 ; Fall       ; clk             ;
+;  hex5[5]   ; clk        ; 4.411 ; 4.411 ; Fall       ; clk             ;
+; hex6[*]    ; clk        ; 4.031 ; 4.031 ; Fall       ; clk             ;
+;  hex6[0]   ; clk        ; 4.776 ; 4.776 ; Fall       ; clk             ;
+;  hex6[1]   ; clk        ; 5.409 ; 5.409 ; Fall       ; clk             ;
+;  hex6[2]   ; clk        ; 4.376 ; 4.376 ; Fall       ; clk             ;
+;  hex6[3]   ; clk        ; 4.833 ; 4.833 ; Fall       ; clk             ;
+;  hex6[4]   ; clk        ; 4.816 ; 4.816 ; Fall       ; clk             ;
+;  hex6[5]   ; clk        ; 4.111 ; 4.111 ; Fall       ; clk             ;
+;  hex6[6]   ; clk        ; 4.031 ; 4.031 ; Fall       ; clk             ;
+; hex7[*]    ; clk        ; 4.170 ; 4.170 ; Fall       ; clk             ;
+;  hex7[0]   ; clk        ; 4.170 ; 4.170 ; Fall       ; clk             ;
+;  hex7[3]   ; clk        ; 4.237 ; 4.237 ; Fall       ; clk             ;
+;  hex7[4]   ; clk        ; 4.682 ; 4.682 ; Fall       ; clk             ;
+;  hex7[5]   ; clk        ; 4.368 ; 4.368 ; Fall       ; clk             ;
+; output[*]  ; clk        ; 4.435 ; 4.435 ; Fall       ; clk             ;
+;  output[0] ; clk        ; 4.485 ; 4.485 ; Fall       ; clk             ;
+;  output[1] ; clk        ; 4.469 ; 4.469 ; Fall       ; clk             ;
+;  output[2] ; clk        ; 4.443 ; 4.443 ; Fall       ; clk             ;
+;  output[3] ; clk        ; 4.435 ; 4.435 ; Fall       ; clk             ;
 +------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1160,7 +1268,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 0        ; 0        ; 0        ; 2434     ;
+; clk        ; clk      ; 0        ; 0        ; 0        ; 2643     ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1170,7 +1278,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 0        ; 0        ; 0        ; 2434     ;
+; clk        ; clk      ; 0        ; 0        ; 0        ; 2643     ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1195,9 +1303,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 132   ; 132  ;
-; Unconstrained Output Ports      ; 27    ; 27   ;
-; Unconstrained Output Port Paths ; 27    ; 27   ;
+; Unconstrained Input Port Paths  ; 155   ; 155  ;
+; Unconstrained Output Ports      ; 42    ; 42   ;
+; Unconstrained Output Port Paths ; 42    ; 42   ;
 +---------------------------------+-------+------+
 
 
@@ -1207,7 +1315,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul  2 23:00:52 2018
+    Info: Processing started: Tue Jul  3 22:38:22 2018
 Info: Command: quartus_sta processador -c processador
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1220,43 +1328,43 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.552
+Info (332146): Worst-case setup slack is -3.502
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -3.552      -207.668 clk 
-Info (332146): Worst-case hold slack is 0.381
+    Info (332119):    -3.502      -222.109 clk 
+Info (332146): Worst-case hold slack is 0.272
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.381         0.000 clk 
+    Info (332119):     0.272         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.222
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.222      -131.222 clk 
+    Info (332119):    -1.222      -154.222 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.173
+Info (332146): Worst-case setup slack is -1.120
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.173       -39.535 clk 
-Info (332146): Worst-case hold slack is 0.209
+    Info (332119):    -1.120       -38.591 clk 
+Info (332146): Worst-case hold slack is 0.101
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.209         0.000 clk 
+    Info (332119):     0.101         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.222
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.222      -131.222 clk 
+    Info (332119):    -1.222      -154.222 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 505 megabytes
-    Info: Processing ended: Mon Jul  2 23:00:53 2018
+    Info: Processing ended: Tue Jul  3 22:38:23 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

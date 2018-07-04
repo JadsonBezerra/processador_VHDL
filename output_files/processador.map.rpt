@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador
-Mon Jul  2 23:00:39 2018
+Tue Jul  3 22:38:08 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,16 +45,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul  2 23:00:39 2018           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul  3 22:38:08 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador                                     ;
 ; Top-level Entity Name              ; cpu                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 234                                             ;
-;     Total combinational functions  ; 199                                             ;
-;     Dedicated logic registers      ; 130                                             ;
-; Total registers                    ; 130                                             ;
-; Total pins                         ; 42                                              ;
+; Total logic elements               ; 251                                             ;
+;     Total combinational functions  ; 198                                             ;
+;     Dedicated logic registers      ; 153                                             ;
+; Total registers                    ; 153                                             ;
+; Total pins                         ; 63                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -158,15 +158,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; dp.vhdl                          ; yes             ; User VHDL File  ; /home/jadson/work/20181/CD/processador_VHDL/dp.vhdl   ;         ;
-; ctrl.vhdl                        ; yes             ; User VHDL File  ; /home/jadson/work/20181/CD/processador_VHDL/ctrl.vhdl ;         ;
-; cpu.vhdl                         ; yes             ; User VHDL File  ; /home/jadson/work/20181/CD/processador_VHDL/cpu.vhdl  ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------+---------+
+; dp.vhdl                          ; yes             ; User VHDL File  ; /home/jadson/work/20181/CD/CircuitosDigitais/Terceiro Projeto - Processador - Versao 02/dp.vhdl   ;         ;
+; ctrl.vhdl                        ; yes             ; User VHDL File  ; /home/jadson/work/20181/CD/CircuitosDigitais/Terceiro Projeto - Processador - Versao 02/ctrl.vhdl ;         ;
+; cpu.vhdl                         ; yes             ; User VHDL File  ; /home/jadson/work/20181/CD/CircuitosDigitais/Terceiro Projeto - Processador - Versao 02/cpu.vhdl  ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -174,28 +174,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 234   ;
+; Estimated Total logic elements              ; 251   ;
 ;                                             ;       ;
-; Total combinational functions               ; 199   ;
+; Total combinational functions               ; 198   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 78    ;
-;     -- 3 input functions                    ; 62    ;
-;     -- <=2 input functions                  ; 59    ;
+;     -- 4 input functions                    ; 117   ;
+;     -- 3 input functions                    ; 25    ;
+;     -- <=2 input functions                  ; 56    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 164   ;
+;     -- normal mode                          ; 163   ;
 ;     -- arithmetic mode                      ; 35    ;
 ;                                             ;       ;
-; Total registers                             ; 130   ;
-;     -- Dedicated logic registers            ; 130   ;
+; Total registers                             ; 153   ;
+;     -- Dedicated logic registers            ; 153   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 42    ;
+; I/O pins                                    ; 63    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 130   ;
-; Total fan-out                               ; 1098  ;
-; Average fan-out                             ; 2.96  ;
+; Maximum fan-out                             ; 153   ;
+; Total fan-out                               ; 1235  ;
+; Average fan-out                             ; 2.98  ;
 +---------------------------------------------+-------+
 
 
@@ -204,9 +204,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
-; |cpu                         ; 199 (15)          ; 130 (15)     ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |cpu                                  ; work         ;
-;    |ctrl:controller|         ; 104 (104)         ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ctrl:controller                  ; work         ;
-;    |dp:datapath|             ; 80 (43)           ; 59 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|dp:datapath                      ; work         ;
+; |cpu                         ; 198 (22)          ; 153 (30)     ; 0           ; 0            ; 0       ; 0         ; 63   ; 0            ; |cpu                                  ; work         ;
+;    |ctrl:controller|         ; 104 (104)         ; 60 (60)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ctrl:controller                  ; work         ;
+;    |dp:datapath|             ; 72 (35)           ; 63 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|dp:datapath                      ; work         ;
 ;       |acc:acumulador_atual| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|dp:datapath|acc:acumulador_atual ; work         ;
 ;       |alu:alu1|             ; 25 (25)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|dp:datapath|alu:alu1             ; work         ;
 ;       |rf:registrador|       ; 12 (12)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|dp:datapath|rf:registrador       ; work         ;
@@ -236,6 +236,12 @@ Encoding Type:  One-Hot
 +------------------------------------------+--------------------------------------------------------+
 ; Register name                            ; Reason for Removal                                     ;
 +------------------------------------------+--------------------------------------------------------+
+; hex5[6]~reg0                             ; Stuck at VCC due to stuck port data_in                 ;
+; hex5[2]~reg0                             ; Stuck at GND due to stuck port data_in                 ;
+; hex5[1]~reg0                             ; Stuck at GND due to stuck port data_in                 ;
+; hex7[6]~reg0                             ; Stuck at VCC due to stuck port data_in                 ;
+; hex7[2]~reg0                             ; Stuck at GND due to stuck port data_in                 ;
+; hex7[1]~reg0                             ; Stuck at GND due to stuck port data_in                 ;
 ; dp:datapath|acc:acumulador_atual|temp[3] ; Merged with dp:datapath|acc:acumulador_atual|output[3] ;
 ; dp:datapath|acc:acumulador_atual|temp[2] ; Merged with dp:datapath|acc:acumulador_atual|output[2] ;
 ; dp:datapath|acc:acumulador_atual|temp[1] ; Merged with dp:datapath|acc:acumulador_atual|output[1] ;
@@ -264,7 +270,7 @@ Encoding Type:  One-Hot
 ; hex1[5]~reg0                             ; Merged with hex1[0]~reg0                               ;
 ; hex0[1]~reg0                             ; Stuck at GND due to stuck port data_in                 ;
 ; hex0[6]~reg0                             ; Stuck at VCC due to stuck port data_in                 ;
-; Total Number of Removed Registers = 28   ;                                                        ;
+; Total Number of Removed Registers = 34   ;                                                        ;
 +------------------------------------------+--------------------------------------------------------+
 
 
@@ -273,12 +279,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 130   ;
+; Total registers                              ; 153   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 95    ;
+; Number of registers using Asynchronous Clear ; 138   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 110   ;
+; Number of registers using Clock Enable       ; 100   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -288,11 +294,12 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; hex4[6]~reg0                            ; 2       ;
+; hex4[6]~reg0                            ; 1       ;
+; hex6[6]~reg0                            ; 1       ;
 ; dp:datapath|opcode_sig[0]               ; 6       ;
-; dp:datapath|opcode_sig[1]               ; 7       ;
-; dp:datapath|opcode_sig[2]               ; 11      ;
 ; dp:datapath|opcode_sig[3]               ; 11      ;
+; ctrl:controller|estado_atual[0]         ; 10      ;
+; ctrl:controller|estado_atual[3]         ; 13      ;
 ; ctrl:controller|OPCODE[0]               ; 3       ;
 ; ctrl:controller|OPCODE[1]               ; 3       ;
 ; ctrl:controller|OPCODE[2]               ; 3       ;
@@ -301,7 +308,7 @@ Encoding Type:  One-Hot
 ; dp:datapath|imm_sig[1]                  ; 1       ;
 ; dp:datapath|imm_sig[2]                  ; 1       ;
 ; dp:datapath|imm_sig[3]                  ; 1       ;
-; Total number of inverted registers = 13 ;         ;
+; Total number of inverted registers = 14 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -310,19 +317,17 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |cpu|dp:datapath|rf:registrador|output[3] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |cpu|ctrl:controller|imm[1]               ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 15 LEs               ; 10 LEs                 ; Yes        ; |cpu|hex1[0]~reg0                         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |cpu|dp:datapath|teste[0]                 ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |cpu|ctrl:controller|estado_atual[1]      ;
-; 16:1               ; 6 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; Yes        ; |cpu|hex4[4]~reg0                         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |cpu|dp:datapath|dd[1]                    ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |cpu|dp:datapath|acu_in[1]                ;
-; 6:1                ; 27 bits   ; 108 LEs       ; 27 LEs               ; 81 LEs                 ; Yes        ; |cpu|ctrl:controller|PC[7]                ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |cpu|ctrl:controller|PC[3]                ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; Yes        ; |cpu|dp:datapath|alu:alu1|output[0]       ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |cpu|dp:datapath|alu_in2[3]               ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |cpu|dp:datapath|alu_in1[1]               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |cpu|dp:datapath|rf:registrador|output[0] ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 15 LEs               ; 10 LEs                 ; Yes        ; |cpu|hex0[1]~reg0                         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |cpu|dp:datapath|teste[1]                 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |cpu|dp:datapath|dd[0]                    ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |cpu|dp:datapath|acu_in[0]                ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 60 LEs               ; 60 LEs                 ; Yes        ; |cpu|ctrl:controller|PC[9]                ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |cpu|dp:datapath|alu:alu1|output[3]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |cpu|ctrl:controller|estado_atual[0]      ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |cpu|dp:datapath|alu_in2[0]               ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |cpu|dp:datapath|alu_in1[0]               ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |cpu|ctrl:controller|PC[0]                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
@@ -341,7 +346,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul  2 23:00:36 2018
+    Info: Processing started: Tue Jul  3 22:38:06 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador -c processador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 8 design units, including 4 entities, in source file dp.vhdl
@@ -380,34 +385,35 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "hex3[1]" is stuck at GND
     Warning (13410): Pin "hex3[2]" is stuck at GND
     Warning (13410): Pin "hex3[6]" is stuck at VCC
+    Warning (13410): Pin "hex5[1]" is stuck at GND
+    Warning (13410): Pin "hex5[2]" is stuck at GND
+    Warning (13410): Pin "hex5[6]" is stuck at VCC
+    Warning (13410): Pin "hex7[1]" is stuck at GND
+    Warning (13410): Pin "hex7[2]" is stuck at GND
+    Warning (13410): Pin "hex7[6]" is stuck at VCC
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register dp:datapath|alu_in1[0] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in2[0] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out2[0] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out1[0] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out3[0] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in1[1] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in2[1] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out2[1] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in1[2] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in2[2] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out2[2] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in1[3] will power up to Low
-    Critical Warning (18010): Register dp:datapath|alu_in2[3] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out1[3] will power up to Low
-    Critical Warning (18010): Register dp:datapath|rf:registrador|out0[3] will power up to Low
+    Critical Warning (18010): Register dp:datapath|opcode_sig[2] will power up to Low
+    Critical Warning (18010): Register dp:datapath|opcode_sig[1] will power up to Low
     Critical Warning (18010): Register ctrl:controller|PC[0] will power up to Low
     Critical Warning (18010): Register ctrl:controller|PC[31] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in2[0] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in1[0] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in1[1] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in2[1] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in1[2] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in2[2] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in1[3] will power up to Low
+    Critical Warning (18010): Register dp:datapath|alu_in2[3] will power up to Low
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 276 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 316 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 234 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info (21059): Implemented 60 output pins
+    Info (21061): Implemented 253 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
     Info: Peak virtual memory: 640 megabytes
-    Info: Processing ended: Mon Jul  2 23:00:39 2018
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Tue Jul  3 22:38:08 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

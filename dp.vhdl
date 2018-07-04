@@ -37,7 +37,10 @@ begin
 						output<=in1 or in2;
 					when "1000"=>
 						output<=not in1;
+					when "1111"=>
+						output<="0001";
 				when others =>
+						
 				end case;
 			end if;
 			end if;
@@ -103,10 +106,10 @@ entity rf is
 end rf;
 
 architecture bhv of rf is
-signal out0 : std_logic_vector(3 downto 0):="1000";
-signal out1: std_logic_vector(3 downto 0):="1001";
-signal out2: std_logic_vector(3 downto 0):="0111";
-signal out3: std_logic_vector(3 downto 0):="0001";
+signal out0 : std_logic_vector(3 downto 0):="0000";
+signal out1: std_logic_vector(3 downto 0):="0000";
+signal out2: std_logic_vector(3 downto 0):="0000";
+signal out3: std_logic_vector(3 downto 0):="0000";
 
 begin
 	process (rst, clk)
@@ -116,7 +119,7 @@ begin
 	  if (rst='1') then
 				  output<="0000";
 				  out0<="0000";
-				  out2	<="0000";
+				  out2<="0000";
 				  out3<="0000";
 				  out1<="0000";
 	  elsif(clk'event and clk = '0')then
@@ -216,8 +219,7 @@ begin
 	registrador : rf port map (rst,clk,dado,dd,enable_reg,reg_out);
 	-- maybe this is were we add the port maps for the other components.....
 			
-	      out_opcode<=opcode_sig;
-								output_4<=acu_out;
+	out_opcode<=opcode_sig;
 	process (rst, clk,opcode)
 		begin
 				if(rst='1') then
@@ -225,20 +227,29 @@ begin
 						alu_in1<="0000";
 						alu_in2<="0000";
 						dado<="0000";
+						output_4<="0000";
+						opcode_sig<="1001";
+						dd<="00";
+						imm_sig<="1111";
+						teste<=0;
 				elsif (clk'event and clk='0') then
 				if(opcode=opcode_sig ) then
 					if imm=imm_sig then
 						if teste=2 then
 							enable_alu<='0';
 						else 
-													teste<=teste+1;
+							teste<=teste+1;
 							enable_alu<='1';
 							end if;
+					else
+						teste<=0;
+						enabLe_alu<='1';
 					end if;
 				else
-				teste<=0;
+					teste<=0;
 					enable_alu<='1';
 				end if;
+					output_4<=acu_out;
 					opcode_sig<=opcode;
 					imm_sig<=imm;
 					case OPCode is

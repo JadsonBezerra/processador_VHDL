@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("/home/cicero/Dropbox/CeT 2018.1/Sistemas Digitais/Laboratorio/Terceiro Projeto - Processador/output_files/") File("processador.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("/home/cicero/Dropbox/CeT 2018.1/Sistemas Digitais/Laboratorio/Terceiro Projeto - Processador - Versao 02/output_files/") File("processador.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
